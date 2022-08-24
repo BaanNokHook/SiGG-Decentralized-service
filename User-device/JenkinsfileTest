@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+    stages {
+        stage('Setup') {
+            steps {
+                sh "yarn install --frozen-lockfile"
+            }
+        }
+        stage('Unit Test') {
+            environment {
+                REACT_APP_EBSI_ENV='integration'
+            }
+            steps{
+                sh "yarn test"
+            }
+        }
+        stage('SonarQube Analysis') {
+            steps {
+                withSonarQubeEnv('LocalSonar'){
+                    sh "/var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar-scanner/bin/sonar-scanner -Dsonar.host.url=https://infra.ebsi.xyz/sonar -Dsonar.projectName=demo-homepage -Dsonar.projectVersion=1.0 -Dsonar.projectKey=demo-homepage -Dsonar.sources=. -Dsonar.projectBaseDir=${WORKSPACE}"
+                }
+            }
+        }
+        stage("Quality Gate") {
+            steps {
+                waitForQualityGate abortPipeline: true
+            }
+        }
+    }
+    post {
+        always {
+            cleanWs()
+            dir("${env.WORKSPACE}@script") {
+                deleteDir()
+            }
+        }
+    }
+}

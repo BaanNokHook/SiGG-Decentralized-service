@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  demo:
+    image: 305472350643.dkr.ecr.eu-central-1.amazonaws.com/intebsi/demo:integration_ebsiint-2439-release202011_v1.0.0
+    build:
+      context: ../..
+      args:
+        PUBLIC_URL: ${PUBLIC_URL?Missing PUBLIC_URL variable}
+        REACT_APP_EBSI_ENV: ${REACT_APP_EBSI_ENV?Missing REACT_APP_EBSI_ENV variable}
