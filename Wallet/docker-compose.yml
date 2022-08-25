@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  wallet-web-client:
+    build:
+      context: .
+      args:
+        # Required
+        REACT_APP_EBSI_ENV: ${REACT_APP_EBSI_ENV:?REACT_APP_EBSI_ENV is not defined or empty}
+        # Optional
+        REACT_APP_WALLET: ${REACT_APP_WALLET}
+        REACT_APP_DEMO: ${REACT_APP_DEMO}
+        REACT_APP_WALLET_API: ${REACT_APP_WALLET_API}
+        REACT_APP_ID_HUB_API: ${REACT_APP_ID_HUB_API}
+        REACT_APP_EULOGIN: ${REACT_APP_EULOGIN}
+    ports:
+      - "8080:8080"
