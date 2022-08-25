@@ -1,0 +1,10 @@
+build
+coverage
+node_modules
+
+# Ignore all .env files
+.env*
+# Except
+!.env.example
+!.env.test
+!.ci/*/.env

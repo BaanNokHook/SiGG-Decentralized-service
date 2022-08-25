@@ -1,0 +1,10 @@
+# Ignore all by default
+*
+
+# Exceptions
+!src
+!public
+!tsconfig.json
+!package.json
+!yarn.lock
+!nginx/nginx.conf
