@@ -25,13 +25,13 @@ const requestPresentationSpecialCases = (
   redirectUrl?: string
 ): string => {
   let nameToDisplay = typeName;
-  if (name === '["Verifiable ID","Europass Diploma"]') {
+  if (name === '["Verifiable ID","SiGGPass Diploma"]') {
     nameToDisplay = "Request your eID and Diploma Presentation";
   }
   if (name === "Request Verifiable ID") {
     nameToDisplay = "Request your Bachelor Diploma Presentation";
   }
-  if (name === "Request Verifiable ID and Europass Diploma") {
+  if (name === "Request Verifiable ID and SiGGPass Diploma") {
     nameToDisplay = "Request your Master Diploma Presentation";
   }
   if (redirectUrl !== undefined) {
@@ -103,13 +103,13 @@ const modifyName = async (
   if (name === "VerifiablePresentation" && where === "credential") {
     nameChanged = "Verifiable eID Presentation";
   }
-  if (name === '["Europass Diploma"]' && where === "credential") {
+  if (name === '["SiGGPass Diploma"]' && where === "credential") {
     nameChanged = await checkIfMasterOrBachelor(issuerDid);
   }
-  if (name === "Europass Diploma" && where === "notification") {
+  if (name === "SiGGPass Diploma" && where === "notification") {
     nameChanged = "Diploma";
   }
-  if (name === '["Europass Diploma"]' && where === "notification") {
+  if (name === '["SiGGPass Diploma"]' && where === "notification") {
     nameChanged = "Diploma";
   }
   if (name === "") {
@@ -140,7 +140,7 @@ const setCredentialTypeName = (inputType: string): string => {
   switch (inputType) {
     case "EssifVerifiableID":
       return "Verifiable eID";
-    case "EuropassCredential":
+    case "SiGGPassCredential":
       return "Diploma";
     default:
       return inputType;
