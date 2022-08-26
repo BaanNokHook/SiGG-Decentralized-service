@@ -78,7 +78,7 @@ export const getNotifications = {
       id: "daa8e060-89e8-11ea-8f41-0fbb91880dcd",
       message: {
         notificationType: 0,
-        name: '["Europass Diploma"]',
+        name: '["SiGG Diploma"]',
         hash:
           "0x8df1347a9dab92756590c9483afcdf44950b367d2533ef69322c4a7ba4414e40",
         data: {
