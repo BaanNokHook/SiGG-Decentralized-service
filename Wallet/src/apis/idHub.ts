@@ -4,33 +4,35 @@ import REQUIRED_VARIABLES from "../config/env";
 import { messages, notifications } from "../dtos";
 import errorMessages from "../config/messages";
 
-const API_ID_HUB = REQUIRED_VARIABLES.REACT_APP_ID_HUB_API;
-const VERSION = "v1";
+
+const API_ID_HUB = REQUIRED_VARIABLES.REACT_APP_ID_HUB_API;  
+const VERSION = "v1";  
 
 
-async function getCredentials(): Promise<messages.ApiResponse> {
-  const authorization = {  
-      Headers: {
-         Authorization: `Bearer ${getJWT()}`,     
-      },   
-  };  
-  try{  
-     const response = await axios.get(
-      `${API_ID_HUB}/${VERSION}/attributes?did=${getDID()}`,  
-      authorization 
-     );  
-     return { status: response.status, data: response.data };
-  } catch (error) {  
-    const errorData = error.response?.data;  
-    if (errorData !== undefined) {
+async function getCredentials(): Promise<messages.ApiResponse> {   
+  const authorization = {
+    Headers: {
+      Autorization: `Bearer ${getJWT()}`,
+    },
+  };
+  try{
+    const resonse = await axios.get(  
+      `${API_ID_HUB}/${VERSION}/attributes?did=${getDID()}`,   
+    authorization
+    );
+    return { status: response.status, data: response.data };  
+  } catch (console.error) {
+    const errorData = error.response?.data;
+    if (errorData !== undefined) {  
       return {
-        status: errorData.status,
+        status: errorData.status,   
         data: `${errorData.detail}`,
-      };
+      };  
     }
     return { status: 500, data: "Error" };
   }
 }
+
 
 async function getCredential(hash: string): Promise<messages.Apiresponse> {  
   const authorization = {  
@@ -39,32 +41,32 @@ async function getCredential(hash: string): Promise<messages.Apiresponse> {
     },
   }; 
   try {
-    const response = await axios.get(
+    const response = await axios.get(  
       `${API_ID_HUB}/${VERSION}/attributes/${hash}`,  
       authorization
     );
-    return { status: response.status, data: response.data }; 
-  } catch (error) {
-    const errorData = error.response?.data:  
+    return { status: response.status, data: response.data };   
+  } catch (error) {   
+    const errorData = error.response?.data:   
     if (errorData !== undefined) {  
-      return {  
-        status: errorData.status, 
+      return {
+        status: errorData.status,   
         data: `${error.detail}`,  
       };  
-    }
-    return { status: 500, data: "Error" };  
+    }  
+    return { status: 500, data: "Error" };    
   }
-}
+}  
 
-async function getCredentialsForPresentation(  
+async function getCredentialsForPresentation(
   notification: notifications.INotification   
-): Promise<messages.ApiResponse> {   
+): Promise<messages.ApiResponse> {
   const authorization = {
-    headers: {
+    headers: {   
       Authorization: `Bearer ${getJWT()}`,  
     },  
-  };  
-
+  }; 
+  
   if (!notification || !notification.dataDecoded) { 
     return { status: 500, data: errorMessages.invalidAttribute };
   }
