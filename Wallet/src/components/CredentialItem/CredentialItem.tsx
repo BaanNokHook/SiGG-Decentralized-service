@@ -9,12 +9,11 @@ import { IAttribute } from "../../dtos/attributes";
 
 type CallbackFunctionOpen = (hash: string) => void;  
 
-
-type Props = {  
-      credential: IAttribute;    
-      methodToOpen: CallbackFunctionOpen;  
+type Props = {
+    credential: IAttribute;  
+    methodToOpen: CallbackFunctionOpen;  
 };  
-
+  
 type State = {
   issuer: String;  
   name: string;  
@@ -93,3 +92,5 @@ class CredentialItem extends Component<Props, State>  {
 }
 
 export default CredentialItem;
+
+
