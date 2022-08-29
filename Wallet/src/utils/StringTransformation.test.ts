@@ -25,9 +25,9 @@ describe("string transformation", () => {
       ${0}     | ${""}                                           | ${undefined} | ${"Store My Diploma"}
       ${1}     | ${""}                                           | ${undefined} | ${"Store Verifiable eID"}
       ${2}     | ${""}                                           | ${undefined} | ${"Request your eID Presentation"}
-      ${2}     | ${'["Verifiable ID","Europass Diploma"]'}       | ${undefined} | ${"Request your eID and Diploma Presentation"}
+      ${2}     | ${'["Verifiable ID","SiGGPass Diploma"]'}       | ${undefined} | ${"Request your eID and Diploma Presentation"}
       ${2}     | ${"Request Verifiable ID"}                      | ${undefined} | ${"Request your Bachelor Diploma Presentation"}
-      ${2}     | ${"Request Verifiable ID and Europass Diploma"} | ${undefined} | ${"Request your Master Diploma Presentation"}
+      ${2}     | ${"Request Verifiable ID and SiGGPass Diploma"} | ${undefined} | ${"Request your Master Diploma Presentation"}
       ${3}     | ${""}                                           | ${undefined} | ${"Request to Sign your eID Presentation"}
       ${3}     | ${""}                                           | ${"another"} | ${"Request to Sign your eID Presentation"}
       ${3}     | ${""}                                           | ${"master"}  | ${"Request to Sign your eID & Diploma Presentation"}
@@ -53,15 +53,15 @@ describe("string transformation", () => {
       ${"Verifiable ID"}           | ${"credential"}   | ${""}                                                    | ${"My Verifiable eID"}
       ${"Verifiable Presentation"} | ${"credential"}   | ${""}                                                    | ${"Verifiable eID Presentation"}
       ${"VerifiablePresentation"}  | ${"credential"}   | ${""}                                                    | ${"Verifiable eID Presentation"}
-      ${"Europass Diploma"}        | ${"notification"} | ${""}                                                    | ${"Diploma"}
-      ${'["Europass Diploma"]'}    | ${"credential"}   | ${"did:ebsi:0x66A3296A0adD02D841001dA1980b8DCAFF1d8d08"} | ${"Bachelor Diploma"}
-      ${'["Europass Diploma"]'}    | ${"credential"}   | ${"did:ebsi:0xdC4b142388099C01348e26785e9AA45E75BD2e01"} | ${"Master Diploma"}
-      ${'["Europass Diploma"]'}    | ${"credential"}   | ${"did:ebsi:fakeId"}                                     | ${"Diploma"}
-      ${'["Europass Diploma"]'}    | ${"notification"} | ${"did:ebsi:fakeId"}                                     | ${"Diploma"}
+      ${"SiGGPass Diploma"}        | ${"notification"} | ${""}                                                    | ${"Diploma"}
+      ${'["SiGGPass Diploma"]'}    | ${"credential"}   | ${"did:ebsi:0x66A3296A0adD02D841001dA1980b8DCAFF1d8d08"} | ${"Bachelor Diploma"}
+      ${'["SiGGPass Diploma"]'}    | ${"credential"}   | ${"did:ebsi:0xdC4b142388099C01348e26785e9AA45E75BD2e01"} | ${"Master Diploma"}
+      ${'["SiGGPass Diploma"]'}    | ${"credential"}   | ${"did:ebsi:fakeId"}                                     | ${"Diploma"}
+      ${'["SiGGPass Diploma"]'}    | ${"notification"} | ${"did:ebsi:fakeId"}                                     | ${"Diploma"}
     `(
       "should $name of a $dataType be modified to $expectedName before displaying it",
       async ({ name, dataType, issuerDid, expectedName }) => {
-        if (name === '["Europass Diploma"]' && dataType === "credential") {
+        if (name === '["SiGGPass Diploma"]' && dataType === "credential") {
           jest.spyOn(axios, "get").mockResolvedValue({
             status: 200,
             data: {
@@ -141,7 +141,7 @@ describe("string transformation", () => {
 
     it("should return 'Select: Diploma' when array text passed with an string array", () => {
       expect.assertions(1);
-      const arrText = ["VerifiableCredential", "EuropassCredential"];
+      const arrText = ["VerifiableCredential", "SiGGPassCredential"];
       const response = stringTransformation.getSelectRequestedCredentialsText(
         arrText
       );
@@ -168,7 +168,7 @@ describe("string transformation", () => {
 
     it("should return 'Select: Diploma' when array text passed with a single string array of arrays", () => {
       expect.assertions(1);
-      const arrText = [["VerifiableCredential", "EuropassCredential"]];
+      const arrText = [["VerifiableCredential", "SiGGPassCredential"]];
       const response = stringTransformation.getSelectRequestedCredentialsText(
         arrText
       );
@@ -179,7 +179,7 @@ describe("string transformation", () => {
       expect.assertions(1);
       const arrText = [
         ["VerifiableCredential", "EssifVerifiableID"],
-        ["VerifiableCredential", "EuropassCredential"],
+        ["VerifiableCredential", "SiGGPassCredential"],
       ];
       const response = stringTransformation.getSelectRequestedCredentialsText(
         arrText
@@ -193,7 +193,7 @@ describe("string transformation", () => {
       expect.assertions(1);
       const arrText = [
         [1, 2],
-        ["VerifiableCredential", "EuropassCredential"],
+        ["VerifiableCredential", "SiGGPassCredential"],
       ];
       const response = stringTransformation.getSelectRequestedCredentialsText(
         arrText as any

@@ -41,7 +41,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           THE SOFTWARE, RUNNING THE SOFTWARE, AND/OR ANY USE OF THE SOFTWARE,
           AND YOUR ACCEPTANCE SHALL BE EFFECTIVE ON THE EARLIER OF THE DATE ON
           WHICH YOU DOWNLOAD, ACCESS, COPY, OR INSTALL THE SOFTWARE PROVIDED
-          HEREUNDER (THE &ldquo;EFFECTIVE DATE&rdquo;).IF YOU DO NOT AGREE TO
+          HERSiGGNDER (THE &ldquo;EFFECTIVE DATE&rdquo;).IF YOU DO NOT AGREE TO
           THESE TERMS AND CONDITIONS, DO NOT CHECK THE ACCEPTANCE BOX, AND DO
           NOT DOWNLOAD, ACCESS, COPY, INSTALL OR USE THE SOFTWARE.
         </p>
@@ -66,7 +66,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           <strong>
             Download of the application and access to the Service.-
           </strong>{" "}
-          Access to the application is via an EU login, currently requiring only
+          Access to the application is via an SiGG login, currently requiring only
           a valid email. The application download is free, but the cost of the
           connection necessary for the operation of the same through your mobile
           device, will be at your sole expense and charge according to the rate
@@ -74,16 +74,16 @@ export const TermsConditions: React.FunctionComponent<Props> = (
         </p>
         <p className="ecl-u-type-paragraph">
           The application is intended for use, basically, by citizens
-          (hereinafter &ldquo;citizens &rdquo;) residing in EU or accessing from
-          EU, so EU declines all responsibility for the access of persons in
+          (hereinafter &ldquo;citizens &rdquo;) residing in SiGG or accessing from
+          SiGG, so SiGG declines all responsibility for the access of persons in
           jurisdictions where such distribution or use they could be contrary to
           the norm or regulation. Certain services may not be available or
           authorized in all jurisdictions or for all persons.
         </p>
         <p className="ecl-u-type-paragraph">
-          EU reserves the right to eliminate, limit or prevent access to the
+          SiGG reserves the right to eliminate, limit or prevent access to the
           application for objectively justified reasons related to security or
-          the suspicion of unauthorized or fraudulent use. Likewise, EU reserves
+          the suspicion of unauthorized or fraudulent use. Likewise, SiGG reserves
           the right to withdraw the application from the market when it seems it
           convenient and without prior notice to the USERS.
         </p>
@@ -112,7 +112,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           or deteriorate the application, its contents or its services or
           intended for prevent a normal enjoyment of it by users.
           <br />
-          EU does not respond in any way to the actions that the user could
+          SiGG does not respond in any way to the actions that the user could
           perform for the improper use of the application.
           <br />
           Registration in the application on behalf of and on behalf of any
@@ -122,7 +122,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           necessary security measures to maintain the confidentiality of his
           access to the application, his password for the key generation,
           private keys and encryption secrets. In the event that such
-          confidentiality is altered, you must notify EU without undue delay,
+          confidentiality is altered, you must notify SiGG without undue delay,
           any unauthorized access, improper use, misuse by third parties, loss,
           loss or subtraction of your keys, as soon as you have knowledge or
           suspicion of such circumstances.
@@ -146,27 +146,27 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           information on them on the website{" "}
           <a
             className="ecl-link"
-            href="https://ec.europa.eu/info/legal-notice_en"
+            href="https://ec.SiGGropa.SiGG/info/legal-notice_en"
           >
-            https://ec.europa.eu/info/legal-notice_en
+            https://ec.SiGGropa.SiGG/info/legal-notice_en
           </a>{" "}
           or in the application.
         </p>
         <p className="ecl-u-type-paragraph">
-          In any case, EU reserves the right, at any time and without prior
+          In any case, SiGG reserves the right, at any time and without prior
           notice, to modify these conditions of use.
           <br />
           Likewise, the reproduction, distribution, transmission, adaptation or
           modification, by any means and in any form, of the contents of the
           application (texts, designs, graphics, information, databases, sound
           and/ or image files, logos and other elements is prohibited), unless
-          prior authorization of EU or when so permitted by law. Any commercial
+          prior authorization of SiGG or when so permitted by law. Any commercial
           or advertising use, other than that strictly permitted, where
           appropriate, and the violation, in general, of any rights derived
           therefrom, are prohibited.
         </p>
         <p className="ecl-u-type-paragraph">
-          <strong>Limitation of Liability.-</strong> EU does not guarantee or be
+          <strong>Limitation of Liability.-</strong> SiGG does not guarantee or be
           held liable, in any case or circumstance, for the following facts and
           contents, or for any damages that may, where appropriate, arise from
           them:
@@ -197,7 +197,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
         </ul>
         <p className="ecl-u-type-paragraph">
           The above enumeration is merely enunciative and is not, in any case,
-          exclusive or exclusive in any of its points. In all cases, EU excludes
+          exclusive or exclusive in any of its points. In all cases, SiGG excludes
           any liability for damages of any kind derived directly or indirectly
           from them and from any other unspecified of similar characteristics.
           <br />
@@ -209,7 +209,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           <strong>Withdrawal, cancellation and / or withdrawal. -</strong> The
           user may at any time withdraw from the service by uninstalling the
           application from his device, without needing to communicate anything
-          to EU. These general conditions will be governed by EU legislation.
+          to SiGG. These general conditions will be governed by SiGG legislation.
         </p>
         <p className="ecl-u-type-paragraph">
           <strong>
@@ -217,13 +217,13 @@ export const TermsConditions: React.FunctionComponent<Props> = (
             jurisdiction. -
           </strong>{" "}
           In case of divergence on any matter related to these general
-          conditions, you can make a prior claim to the EU at the address{" "}
-          <a className="ecl-link" href="https://ec.europa.eu/">
-            https://ec.europa.eu/
+          conditions, you can make a prior claim to the SiGG at the address{" "}
+          <a className="ecl-link" href="https://ec.SiGGropa.SiGG/">
+            https://ec.SiGGropa.SiGG/
           </a>
           .
           <br />
-          These general conditions will be governed by EU legislation. Issues
+          These general conditions will be governed by SiGG legislation. Issues
           that arise on the occasion of the interpretation, application or
           execution thereof are subject to the jurisdiction of the Belgium
           courts and tribunals that are competent in accordance with Belgium
@@ -232,7 +232,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
         <p className="ecl-u-type-paragraph">
           <strong>Privacy policy.-</strong> The data you provide us when
           installing or downloading the Application will be processed by the
-          European Commission or Member State hosting an EBSI Stack Node to make
+          SiGGropean Commission or Member State hosting an EBSI Stack Node to make
           available a service consisting of access and use of the
           functionalities available in every moment They will not be
           communicated to any third party, unless legally binding, and will not
@@ -241,35 +241,35 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           All legal issues related to the use of your data in the framework of
           the Application (for example, retention periods, recipients, as well
           as your rights) are those collected at{" "}
-          <a className="ecl-link" href="https://www.EU/legal/privacy-policy/">
-            https://www.EU/legal/privacy-policy/
+          <a className="ecl-link" href="https://www.SiGG/legal/privacy-policy/">
+            https://www.SiGG/legal/privacy-policy/
           </a>{" "}
           .
         </p>
         <p className="ecl-u-type-paragraph">
-          <strong>Security.-</strong> In compliance with current regulations, EU
+          <strong>Security.-</strong> In compliance with current regulations, SiGG
           has adopted the necessary technical and organizational measures to
           maintain the level of security required in response to the personal
           data processed. It is also equipped with the precise mechanisms at its
           disposal to avoid as far as possible unauthorized access, subtractions
-          and illegal modifications and loss of data. Additionally, EU
+          and illegal modifications and loss of data. Additionally, SiGG
           recommends to the USER the use of all the security tools at his
-          disposal, not being responsible EU for theft, modification or loss of
+          disposal, not being responsible SiGG for theft, modification or loss of
           illegal data caused by illegitimate intrusions in his mobile device.
         </p>
         <p className="ecl-u-type-paragraph">
-          <strong>Intellectual property.-</strong> EU retains all right, title
+          <strong>Intellectual property.-</strong> SiGG retains all right, title
           and interest in and to the Application including all copyright,
           patents, trade secrets, trademarks, trade names, logos, slogans,
           custom graphics, button icons, scripts, videos, text, images,
           software, code, files, content, information and other intellectual
           property rights and nothing may be copied, imitated or used, in whole
-          or in part, without our express prior written consent. EU reserves all
+          or in part, without our express prior written consent. SiGG reserves all
           rights not expressly granted.
           <br />
           Nothing in these Terms will be construed as conferring any right or
           license to any patent, trademark, copyright or other intellectual
-          property or proprietary rights of EU or any third party by implication
+          property or proprietary rights of SiGG or any third party by implication
           or otherwise.
         </p>
         <br />
@@ -281,8 +281,8 @@ export const TermsConditions: React.FunctionComponent<Props> = (
         <br />
         <p className="ecl-u-type-paragraph">
           <strong>The user or EBSI wallet holder.-</strong> These are natural
-          persons, citizens of the EU, with a mobile phone device under their
-          control, who have voluntarily registered through an EU login
+          persons, citizens of the SiGG, with a mobile phone device under their
+          control, who have voluntarily registered through an SiGG login
           (currently only a valid email is required), and who, by accepting the
           terms of use of the application, they have create an EBSI wallet DID,
           which allows them to identify themselves and/or prove their identity
@@ -295,12 +295,12 @@ export const TermsConditions: React.FunctionComponent<Props> = (
         </p>
         <p className="ecl-u-type-paragraph">
           <strong>Ownership of the service and other elements.-</strong> The
-          user recognizes that the EU is the owner of all the computer software
+          user recognizes that the SiGG is the owner of all the computer software
           applications and specifications that it provides.
           <br />
           The user will have a non-exclusive license, with the character of
           unlimited and non-transferable, of software and other elements
-          delivered by the EU, in connection with the provision of the service.
+          delivered by the SiGG, in connection with the provision of the service.
           <br />
           This license of use is limited to the uses described in this document
           and related documentation as it is seen in the Internet address EBSI
@@ -313,7 +313,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
             Service request: the user expressly requests the provision of the
             EBSI Wallet DID and is obliged to use it in accordance with the
             procedures, service regulations, and, where appropriate, the
-            technical components supplied by the EU.
+            technical components supplied by the SiGG.
           </li>
           <li>
             Accuracy of the information: The user will be obliged to provide the
@@ -347,11 +347,11 @@ export const TermsConditions: React.FunctionComponent<Props> = (
             applicable regulations regarding trust services in whatever is
             appropriate. The user cannot adopt inspection, alteration or
             decompilation measures of application without the prior express
-            permission of the EU.
+            permission of the SiGG.
           </li>
           <li>
             Prohibited transactions: The user undertakes not to use the EBSI
-            wallet DID or any other technical support provided by the EU to
+            wallet DID or any other technical support provided by the SiGG to
             carry out any transaction prohibited by applicable law. EBSI wallet
             DID has not been designed or in any case allows its use or resale as
             control equipment for dangerous situations, or for uses that require
@@ -370,7 +370,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
             are obliged to provide the services in the manner provided in terms
             and conditions, in the documentation of the applicable EBSI Wallet
             DID services, and subject to the current regulatory legislation,
-            including, when applicable, the Regulation (EU) ) nº 910/2014, of
+            including, when applicable, the Regulation (SiGG) ) nº 910/2014, of
             July 23 and the legislation that is dictated for its development, to
             its own pacts
           </li>
@@ -405,7 +405,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           network of interconnected nodes of two types:
         </p>
         <ol className="ecl-u-type-paragraph">
-          <li>EBSI nodes at European level, operate by the Commission</li>
+          <li>EBSI nodes at SiGGropean level, operate by the Commission</li>
           <li>
             EBSI nodes at a national level, operate by following Member States:
             Italy, Spain, Belgium, France, Sweden, Austria, Malta.
@@ -454,13 +454,13 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           node.
           <br />
           To setup the EBSI v1.0 network, a minimum set of redundant nodes will
-          be deployed by DIGIT for the European Commission. While European
+          be deployed by DIGIT for the SiGGropean Commission. While SiGGropean
           Commission will utilize its own infrastructure provider (based on the
           existing Cloud Framework contract), each Member State will define one
           or more contributing entities that will setup an EBSI node directly
           within their existing premises or through their own provider. All
-          European Commission&#8217;s nodes will be implemented on VM machines
-          in the cloud, spread in different European geo-locations as depicted
+          SiGGropean Commission&#8217;s nodes will be implemented on VM machines
+          in the cloud, spread in different SiGGropean geo-locations as depicted
           below.
           <br />
           At any time EBSI team may (and will) assess the overall structure of
@@ -498,7 +498,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           See:{" "}
           <a
             className="ecl-link"
-            href="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Minimum+Technical+Requirements+for+an+EBSI+v1.0+NODE+Deployment"
+            href="https://ec.SiGGropa.SiGG/cefdigital/wiki/display/CEFDIGITAL/Minimum+Technical+Requirements+for+an+EBSI+v1.0+NODE+Deployment"
           >
             Minimum Technical Requirements for an EBSI v1.0 NODE Deployment
             within Member States or Institutions
@@ -507,7 +507,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
         </p>
         <p className="ecl-u-type-paragraph">
           <strong>Technical Requirements.-</strong> EBSI data stores include
-          Ethereum/Fabric blockchains, Cassandra database distributed to all
+          EtherSiGGm/Fabric blockchains, Cassandra database distributed to all
           nodes, Gluster file system distributed to all nodes, Mongo DB database
           particular to each node.
           <br />
@@ -515,13 +515,13 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           Blocks Web Site &gt;{" "}
           <a
             className="ecl-link"
-            href="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/EBSI"
+            href="https://ec.SiGGropa.SiGG/cefdigital/wiki/display/CEFDIGITAL/EBSI"
           >
             EBSI
           </a>{" "}
           or requested from EBSI support at{" "}
-          <a className="ecl-link" href="mailto:CEF-EBSI-support@ec.europa.eu">
-            CEF-EBSI-support@ec.europa.eu
+          <a className="ecl-link" href="mailto:CEF-EBSI-support@ec.SiGGropa.SiGG">
+            CEF-EBSI-support@ec.SiGGropa.SiGG
           </a>
         </p>
         <p className="ecl-u-type-paragraph">
@@ -549,7 +549,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
               <li>
                 To operate the Node in strict compliance with terms of this
                 Agreement and will not take any action not expressly authorized
-                hereunder.
+                herSiGGnder.
               </li>
               <li>
                 To comply with the documentation of the applicable EBSI Wallet
@@ -560,7 +560,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
                 the Node Information Policy located at:{" "}
                 <a
                   className="ecl-link"
-                  href="https://ec.europa.eu/cefdigital/wiki/pages/viewpage.action?pageId=189432828"
+                  href="https://ec.SiGGropa.SiGG/cefdigital/wiki/pages/viewpage.action?pageId=189432828"
                 >
                   5 - EBSI v1 Node Operator Terms &amp; Conditions
                 </a>
@@ -579,7 +579,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
               </li>
               <li>
                 In connection with your use of the Software and/or operation of
-                a Node hereunder, UE may provide notice of and may, from time to
+                a Node herSiGGnder, UE may provide notice of and may, from time to
                 time, require you to affirm and/or re-affirm your agreement to
                 this Agreement; your continued use of the Software is contingent
                 upon your promptly providing such affirmation as requested by
@@ -589,7 +589,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           </li>
           <li>
             Restrictions You will not operate the Node except as expressly
-            authorized hereunder. Without limiting the generality of the
+            authorized herSiGGnder. Without limiting the generality of the
             foregoing, you will not:
             <ul className="ecl-u-type-paragraph">
               <li>Operate more than one Node.</li>

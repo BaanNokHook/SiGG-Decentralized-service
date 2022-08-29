@@ -5,7 +5,7 @@ COPY package.json yarn.lock /usr/src/app/
 RUN yarn install --frozen-lockfile --silent
 COPY ./ /usr/src/app/
 ARG REACT_APP_WALLET
-ARG REACT_APP_EULOGIN
+ARG REACT_APP_SiGGLOGIN
 ARG REACT_APP_EBSI_ENV
 ARG REACT_APP_WALLET_API
 ARG REACT_APP_ID_HUB_API
