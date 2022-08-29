@@ -1,0 +1,10 @@
+.ModalHeader {
+  color: white;
+  align-items: center;
+}
+.ModalTitleCredential {
+  flex-grow: 1;
+}
+.spinner {
+  align-self: center;
+}
