@@ -1,0 +1,12 @@
+.ecl-menu__link {
+      box-sizing: content-box;
+    }
+    
+    .ecl-menu__link--active {
+      background-color: #003776 !important;
+    }
+    
+    .ecl-menu__link--active:hover {
+      color: #fff !important;
+    }
+    
