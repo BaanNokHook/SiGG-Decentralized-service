@@ -1,0 +1,58 @@
+import React from "react";
+
+type Props = {
+  data: string | any;
+};
+
+
+export const Diploma: React.FunctionComponent<Props> = {( data )} => {  
+   try {   
+      const parsedData = JSON.parse(data);  
+      return (
+         <dl className="ecl-description-list ecl-description-list--horizontal">  
+           <dt className="ecl-description-list__term">Issuer</dt>  
+           <dd className="ecl-description-list__definition">  
+             {parsedData.issuer} 
+           </dd>
+           <dt className="ecl-description-list__term">Title</dt>   
+           <dd className="ecl-description-list__definition">
+              {parsedData.credentialSubject.achivements[0].title}   
+           </dd>
+           <dt className="ecl-description-list__term">Issuance Date</dt>  
+           <dd className="ecl-description-list__definition">
+              {parsedData.credentialSubject.achievements[0].issedDate}  
+           </dd>  
+           <dt className="ecl-description-list__term">ISCED-F Code</dt>
+            <dd className="ecl-description-list__definition">
+              {
+                  parsedData.credentialSubject.achievements[0].learningSpecification  
+                    .iscedFcode   
+              }  
+            </dd>  
+            <dt className="ecl-description-list__term">Target Framework</dt>   
+            <dd className="ecl-description-list__definition">  
+               {
+                  parsedData.credentialSubject.achievements[0].hashPart[0]   
+                    .wasDerivedFrom.grade.numericScore    
+               }  
+            </dd> 
+         </dl> 
+      );  
+   } catch (error) {  
+      return (
+         <>
+          <p>
+            <b>
+               <u>Error Parsing the Diploma.</u>   
+            </b>   
+          </p>  
+          <p>
+            <b>Contract the issuer to check what happens.</b>
+          </p>
+         </>
+      );  
+   }
+};  
+
+export default Diploma;  
+
