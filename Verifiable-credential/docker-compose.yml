@@ -1,0 +1,30 @@
+# This is an example docker-compose.yml that shows you how to run the project locally
+# It is not meant to be used as is in production
+version: "3.7"
+
+services:
+  diploma:
+    build:
+      context: .
+      args:
+        APP_PUBLIC_URL: ${APP_PUBLIC_URL:?Missing APP_PUBLIC_URL variable}
+        EBSI_ENV: ${EBSI_ENV:?Missing EBSI_ENV variable}
+        EBSI_DEMONSTRATOR_URL: ${EBSI_DEMONSTRATOR_URL:?Missing EBSI_DEMONSTRATOR_URL variable}
+        EBSI_WALLET_WEB_CLIENT_URL: ${EBSI_WALLET_WEB_CLIENT_URL:?Missing EBSI_WALLET_WEB_CLIENT_URL variable}
+    environment:
+      EBSI_ENV: ${EBSI_ENV:?Missing EBSI_ENV variable}
+      NODE_ENV: ${NODE_ENV:?Missing NODE_ENV variable}
+      APP_PORT: ${APP_PORT:?Missing APP_PORT variable}
+      APP_PUBLIC_URL: ${APP_PUBLIC_URL:?Missing APP_PUBLIC_URL variable}
+      APP_INTERNAL_URL: ${APP_INTERNAL_URL:?Missing APP_INTERNAL_URL variable}
+      EBSI_WALLET_API: ${EBSI_WALLET_API:?Missing EBSI_WALLET_API variable}
+      EBSI_VERIFIABLE_CREDENTIAL_API: ${EBSI_VERIFIABLE_CREDENTIAL_API:?Missing EBSI_VERIFIABLE_CREDENTIAL_API variable}
+      EBSI_VERIFIABLE_PRESENTATION_API: ${EBSI_VERIFIABLE_PRESENTATION_API:?Missing EBSI_VERIFIABLE_PRESENTATION_API variable}
+      EBSI_WALLET_WEB_CLIENT_URL: ${EBSI_WALLET_WEB_CLIENT_URL:?Missing EBSI_WALLET_WEB_CLIENT_URL variable}
+      LOG_LEVEL: ${LOG_LEVEL:?Missing LOG_LEVEL variable}
+      BACHELOR_ISSUER: ${BACHELOR_ISSUER:?Missing BACHELOR_ISSUER variable}
+      BACHELOR_PRIVATE_KEY: ${BACHELOR_PRIVATE_KEY:?Missing BACHELOR_PRIVATE_KEY variable}
+      MASTER_ISSUER: ${MASTER_ISSUER:?Missing MASTER_ISSUER variable}
+      MASTER_PRIVATE_KEY: ${MASTER_PRIVATE_KEY:?Missing MASTER_PRIVATE_KEY variable}
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
