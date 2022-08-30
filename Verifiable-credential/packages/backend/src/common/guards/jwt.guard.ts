@@ -46,28 +46,18 @@ import {
          if (
             !decodedToken.sub_jwk ||  
             !decodeToken.sub_jwk.kid ||  
-            !decodeToken.sub_jwk.kid.startsWith("did:")
-         )
-      }
+            !decodeToken.sub_jwk.kid.startsWith("did:sigg:")  
+         ) {
+            this.logger.debug("Missing or malformed DID in JWT");  
+            throw formatException("Missing or malformed DID in JWT");  
+         }  
+
+         return true;
+       }
      }
 
-  
-  
-// -------------------------------------------------------------------------------------------------------------------------------
-    
+     export default JwtGuard;
 
-        if (
-          !decodedToken.sub_jwk ||
-          !decodedToken.sub_jwk.kid ||
-          !decodedToken.sub_jwk.kid.startsWith("did:sigg:")
-        ) {
-          this.logger.debug("Missing or malformed DID in JWT");
-          throw formatException("Missing or malformed DID in JWT");
-        }
-    
-        return true;
-      }
-    }
-    
-    export default JwtGuard;
-    
+  
+  
+
