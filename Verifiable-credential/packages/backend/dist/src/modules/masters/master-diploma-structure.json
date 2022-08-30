@@ -1,0 +1,257 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "http://EBSI-WEBSITE.EU/schemas/vc/2019/v1",
+        "http://EBSI-WEBSITE.EU/schemas/eidas/2019/v1"
+    ],
+    "id": "https://app.ebsi.xyz/diploma/spanish-university/credentials/masters-diploma-va",
+    "type": ["VerifiableCredential", "EuropassCredential"],
+    "issuer": {
+        "id": "did:ebsi:SpanishUniv",
+        "organization": {
+            "id": "urn:agent:200219515",
+            "legalIdentifier": "U04200078",
+            "vatIdentifier": "Q9350003A",
+            "taxIdentifier": "",
+            "identifier": "agentIdentifier1",
+            "preferredName": "Universitat Rovira i Virgili",
+            "alternativeName": "Universitat Rovira i Virgili",
+            "homePage": "http://www.urv.cat/",
+            "escoOrganizationType": "Educational Institution",
+            "siteLocation": "Tarragona",
+            "hasAccreditation": {
+                "targetFramework": "Europass Accreditation Database",
+                "targetResource": "https://accreditation.europass.eu/12341455"
+            }
+        }
+    },
+    "issuanceDate": "2019-12-06T12:00:00Z",
+    "expirationDate": null,
+    "title": [
+        {
+            "lang": "en_GB",
+            "contentType": "text/plain",
+            "text": "Certificate of Enrolment"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en_GB",
+            "contentType": "text/plain",
+            "text": "Attests that student has completed a 2 year course in Computer Security and Artificial Intelligence up to EQF Level 7."
+        }
+    ],
+    "credentialSubject": {
+        "id": "",
+        "achievements": [
+            {
+                "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/ach1",
+                "identifier": "achIdentifier1",
+                "title": "Qualification Award in Computer Security and Artificial Intelligence",
+                "description": "A detailed description of the award in computer science",
+                "issuedDate": "2019-12-06T12:00:00Z",
+                "partReferences": null,
+                "hasPart": [
+                    {
+                        "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/ach2",
+                        "identifier": "achIdentifier2",
+                        "title": "Credit in Introductory Computer Security",
+                        "description": "A credit in Introductory Computer Security",
+                        "issuedDate": 1573171200000,
+                        "partReferences": null,
+                        "hasPart": null,
+                        "derivedReferences": null,
+                        "influencedReferences": null,
+                        "wasInfluencedBy": null,
+                        "wasDerivedFrom": {
+                            "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/amn2",
+                            "identifier": "amnIdentifier2",
+                            "title": "Unit examination",
+                            "description": null,
+                            "partReferences": null,
+                            "derivedReferences": null,
+                            "hasPart": null,
+                            "wasDerivedFrom": null,
+                            "assessedBy": null,
+                            "additionalNote": "",
+                            "grade": {
+                                "numericScore": "91%"
+                            },
+                            "issuedDate": "2019-12-06T12:00:00Z",
+                            "specifiedby": null
+                        },
+                        "entitlement": null,
+                        "learningSpecification": {
+                            "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/lss2",
+                            "identifier": "LssIdenitifer2",
+                            "title": "Specification for Credit in Computer Security",
+                            "definition": "Description of the Curriculum of the Credit",
+                            "volumeOfLearning": "120 hours",
+                            "learningOutcomes": null,
+                            "iscedFcode": "0619: Information and Communication Technologies (ICTs)",
+                            "educationSubject": {
+                                "targetNotation": "034627",
+                                "targetName": "Communication Science"
+                            },
+                            "ectsCreditPoints": 8
+                        }
+                    },
+                    {
+                        "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/ach3",
+                        "identifier": "achIdentifier3",
+                        "title": "Credit in Artificial Intelligence",
+                        "description": "A credit in AI",
+                        "issuedDate": "2019-12-06T12:00:00Z",
+                        "partReferences": null,
+                        "hasPart": null,
+                        "derivedReferences": null,
+                        "influencedReferences": null,
+                        "wasInfluencedBy": null,
+                        "wasDerivedFrom": {
+                            "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/amn3",
+                            "identifier": "amnIdentifier3",
+                            "title": "Unit examination",
+                            "description": null,
+                            "partReferences": null,
+                            "derivedReferences": null,
+                            "hasPart": null,
+                            "wasDerivedFrom": null,
+                            "assessedBy": null,
+                            "additionalNote": "",
+                            "grade": {
+                                "numericScore": "95%"
+                            },
+                            "issuedDate": "2019-12-06T12:00:00Z",
+                            "specifiedby": null
+                        },
+                        "entitlement": null,
+                        "learningSpecification": {
+                            "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/lss3",
+                            "identifier": "LssIdenitifer3",
+                            "title": "Specification for Credit in Artificial Intelligence",
+                            "definition": "Description of the Curriculum of the Credit",
+                            "volumeOfLearning": "180 hours",
+                            "learningOutcomes": [
+                                {
+                                    "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/loo6",
+                                    "identifier": null,
+                                    "title": "ability to develop security-related AI Software",
+                                    "description": null,
+                                    "learningOutcomeType": "skill",
+                                    "reusabilityLevel": null,
+                                    "relatedESCOSkill": {
+                                        "target": "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7"
+                                    }
+                                }
+                            ],
+                            "iscedFcode": "0619: Information and Communication Technologies (ICTs)",
+                            "ectsCreditPoints": 6,
+                            "language": {
+                                "content": "English",
+                                "uri": "http://publications.europa.eu/resource/authority/language/NLD"
+                            }
+                        }
+                    }
+                ],
+                "derivedReferences": null,
+                "influencedReferences": null,
+                "wasInfluencedBy": null,
+                "wasDerivedFrom": {
+                    "id": "1cb8ef7e-0024-46f0-9555-61fb4280d121/amn3",
+                    "identifier": "amnIdentifier1",
+                    "title": "Final examination",
+                    "description": null,
+                    "partReferences": null,
+                    "derivedReferences": null,
+                    "hasPart": null,
+                    "wasDerivedFrom": null,
+                    "assessedBy": null,
+                    "additionalNote": "",
+                    "grade": {
+                        "textScore": "Magna cum Laude"
+                    },
+                    "issuedDate": "2019-12-06T12:00:00Z",
+                    "specifiedby": {
+                        "id": "1cb8ef7e-0024-46f0-9555-61fb4280d121/ass1",
+                        "identifier": "AssIdenitifer1",
+                        "assesmentType": "written examination",
+                        "title": "Final Examination in Computer Security an Artificial Intelligence",
+                        "description": "Final examination consisting of a 100 page research paper, assessed by a panel of peers.",
+                        "gradingscheme": {
+                            "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/sco1",
+                            "identifier": "ScoIdenitifer1",
+                            "title": "Degree Grading Scheme",
+                            "description": "Scores of 85% plus are awarded a summa cum laude, 70%-80% are awarded a magna cum laude, while 50% to 80% are issued without grade (regular award)"
+                        }
+                    }
+                },
+                "learningSpecification": {
+                    "id": "1cb8ef7e-0024-46f0-9555-61fb4280d121/lss1",
+                    "identifier": {
+                        "IdentifierSchemeAgencyName": "Government of Spain",
+                        "Content": "20090702132843917605"
+                    },
+                    "title": "Specification for Master's Degree in Computer Security and Artificial Intelligence",
+                    "definition": null,
+                    "volumeOfLearning": "1200 hours",
+                    "learningOutcomes": [
+                        {
+                            "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/loo1",
+                            "identifier": null,
+                            "title": "ability to apply knowledge of computing and mathematics appropriate to the discipline.",
+                            "description": null,
+                            "learningOutcomeType": "skill",
+                            "reusabilityLevel": null,
+                            "relatedESCOSkill": null
+                        },
+                        {
+                            "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/loo2",
+                            "identifier": null,
+                            "title": "ability to analyze a problem, and identify and define the computing requirements appropriate to its solution",
+                            "description": null,
+                            "learningOutcomeType": "skill",
+                            "reusabilityLevel": null,
+                            "relatedESCOSkill": null
+                        },
+                        {
+                            "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/loo3",
+                            "identifier": null,
+                            "title": "ability to design, implement, and evaluate a computer-based system, process, component, or program to meet desired needs.",
+                            "description": null,
+                            "learningOutcomeType": "skill",
+                            "reusabilityLevel": null,
+                            "relatedESCOSkill": null
+                        },
+                        {
+                            "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/loo4",
+                            "identifier": null,
+                            "title": "understanding of professional, ethical, legal, security and social issues and responsibilities.",
+                            "description": null,
+                            "learningOutcomeType": "knowledge",
+                            "reusabilityLevel": null,
+                            "relatedESCOSkill": null
+                        },
+                        {
+                            "id": "1cb8ef7e-0024-46f0-9555-61fb4280d122/loo5",
+                            "identifier": null,
+                            "title": "bility to function effectively on teams to accomplish a common goal.",
+                            "description": null,
+                            "learningOutcomeType": "autonomy and responsibility",
+                            "reusabilityLevel": null,
+                            "relatedESCOSkill": null
+                        }
+                    ],
+                    "iscedFcode": "0619: Information and Communication Technologies (ICTs)",
+                    "ectsCreditPoints": 180,
+                    "eqfLevel": "7",
+                    "nqfLevel": "NQF7",
+                    "partialQualification": false,
+                    "hasAccreditation": {
+                        "targetFramework": " QA Framework",
+                        "targetResource": "https://accreditation.flanders.gov/ASC12311"
+                    }
+                }
+            }
+        ]
+    }
+}
