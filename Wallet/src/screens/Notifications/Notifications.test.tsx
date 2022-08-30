@@ -126,7 +126,7 @@ describe("notifications renders", () => {
               <div
                 class="ecl-menu__site-name"
               >
-                EBSI Wallet
+                SiGG Wallet
               </div>
               <section
                 class="ecl-menu__inner"
@@ -279,7 +279,7 @@ describe("notifications renders", () => {
               class="ribbonText"
               href="https://app.intebsi.xyz/demo"
             >
-              EBSI DEMO
+            SiGG DEMO
             </a>
           </div>
         </header>

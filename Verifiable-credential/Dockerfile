@@ -7,11 +7,11 @@
 #
 # Required ARG variables:
 #   - APP_PUBLIC_URL
-#   - EBSI_ENV ("local", "integration", "development", "production")
+#   - SiGG_ENV ("local", "integration", "development", "production")
 #
 # Optional ARG variables:
-#   - EBSI_DEMONSTRATOR_URL
-#   - EBSI_WALLET_WEB_CLIENT_URL
+#   - SiGG_DEMONSTRATOR_URL
+#   - SiGG_WALLET_WEB_CLIENT_URL
 #   - BACHELOR_PUBLIC_URL (default: "${APP_PUBLIC_URL}/bachelor")
 #   - MASTER_PUBLIC_URL (default: "${APP_PUBLIC_URL}/master")
 #
@@ -22,7 +22,7 @@
 #   - REACT_APP_BACKEND_EXTERNAL_URL
 #
 # Required ENV variables:
-#   - EBSI_ENV ("local", "integration", "development", "production")
+#   - SiGG_ENV ("local", "integration", "development", "production")
 #   - BACHELOR_ISSUER
 #   - BACHELOR_PRIVATE_KEY (hexadecimal key)
 #   - MASTER_ISSUER
@@ -33,10 +33,10 @@
 #   - APP_PORT (default: set in code - 8080)
 #   - APP_PUBLIC_URL (default: set in code)
 #   - APP_INTERNAL_URL (default: set in code) (useful for local testing only)
-#   - EBSI_WALLET_API (default: set in code)
-#   - EBSI_VERIFIABLE_CREDENTIAL_API (default: set in code)
-#   - EBSI_VERIFIABLE_PRESENTATION_API (default: set in code)
-#   - LOG_LEVEL ("error", "warn", "info", "verbose" or "debug" ; default: set in code, depends on EBSI_ENV)
+#   - SiGG_WALLET_API (default: set in code)
+#   - SiGG_VERIFIABLE_CREDENTIAL_API (default: set in code)
+#   - SiGG_VERIFIABLE_PRESENTATION_API (default: set in code)
+#   - LOG_LEVEL ("error", "warn", "info", "verbose" or "debug" ; default: set in code, depends on SiGG_ENV)
 #
 
 # Set default values for optional ARGs
@@ -61,15 +61,15 @@ WORKDIR /usr/src/app
 RUN yarn install --frozen-lockfile --silent
 # Import ARGs
 ARG APP_PUBLIC_URL
-ARG EBSI_ENV
-ARG EBSI_DEMONSTRATOR_URL
-ARG EBSI_WALLET_WEB_CLIENT_URL
+ARG SiGG_ENV
+ARG SiGG_DEMONSTRATOR_URL
+ARG SiGG_WALLET_WEB_CLIENT_URL
 # Required custom ARGs
-ARG REACT_APP_EBSI_ENV=${EBSI_ENV}
+ARG REACT_APP_SiGG_ENV=${SiGG_ENV}
 # Custom environment variables
-ARG REACT_APP_DEMONSTRATOR_URL=${EBSI_DEMONSTRATOR_URL}
+ARG REACT_APP_DEMONSTRATOR_URL=${SiGG_DEMONSTRATOR_URL}
 ARG REACT_APP_BACKEND_EXTERNAL_URL=${APP_PUBLIC_URL}
-ARG REACT_APP_WALLET_WEB_CLIENT_URL=${EBSI_WALLET_WEB_CLIENT_URL}
+ARG REACT_APP_WALLET_WEB_CLIENT_URL=${SiGG_WALLET_WEB_CLIENT_URL}
 # 1.1 Build Diploma Bachelor frontend
 COPY ./packages/bachelor-frontend /usr/src/app/packages/bachelor-frontend
 ARG BACHELOR_PUBLIC_URL

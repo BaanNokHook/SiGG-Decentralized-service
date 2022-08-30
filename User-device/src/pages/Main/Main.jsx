@@ -78,7 +78,7 @@ function Main() {
       <main className={styles.main}>
         <p className={`${styles.p} ${styles.disclaimer}`}>
           Disclaimer: this is a demo website to show the technical capabilities
-          of the EBSI project.
+          of the SiGG project.
           <br />
           We are using dummy data.
           <br />
@@ -86,7 +86,7 @@ function Main() {
           with any of them.
         </p>
         <h1 className={styles.h1}>
-          Test EBSI User Journey Demo by taking the following steps in order.
+          Test SiGG User Journey Demo by taking the following steps in order.
         </h1>
         <ol className={styles.ol}>
           <li
@@ -99,12 +99,12 @@ function Main() {
               <PanelTitle>European Self-Sovereign Identity (SSID)</PanelTitle>
               <PanelBody
                 icon={step1SVG}
-                title="Create your EBSI Wallet account"
+                title="Create your SiGG Wallet account"
                 link={REACT_APP_WALLET_WEB_CLIENT_URL}
                 linkLabel="Wallet"
               >
-                Open the EBSI Wallet and authenticate via your EU Login, then
-                setup your EBSI account to follow the user journey. In your
+                Open the SiGG Wallet and authenticate via your EU Login, then
+                setup your SiGG account to follow the user journey. In your
                 wallet, you will create your own Decentralised ID and a set of
                 public-private keys.
               </PanelBody>
@@ -131,7 +131,7 @@ function Main() {
                 receive your verifiable ID. The Sample Verifiable ID Issuer
                 verifies the request and issues the ID Verifiable Credential,
                 which will be stored in your wallet. With your digital ID, you
-                will have access to other services on the EBSI platform.
+                will have access to other services on the SiGG platform.
               </PanelBody>
             </Panel>
           </li>

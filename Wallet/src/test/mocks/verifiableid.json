@@ -1,16 +1,16 @@
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
-    "http://EBSI-WEBSITE.EU/schemas/vc/2019/v1",
-    "http://EBSI-WEBSITE.EU/schemas/eidas/2019/v1"
+    "http://SiGG-WEBSITE.EU/schemas/vc/2019/v1",
+    "http://SiGG-WEBSITE.EU/schemas/eidas/2019/v1"
   ],
-  "id": "ebsi:type-version-of-the-credential",
+  "id": "sigg:type-version-of-the-credential",
   "type": "['VerifiableCredential','EssifVerifiableID']",
-  "issuer": "did:ebsi:BelgianGovernment",
+  "issuer": "did:sigg:BelgianGovernment",
   "issuanceDate": "2019-06-22T14:11:44Z",
   "expirationDate": "2019-06-22T14:11:44Z",
   "credentialSubject": {
-    "id": "did:ebsi:evas-did",
+    "id": "did:sigg:evas-did",
     "personIdentifier": "BE/BE/02635542Y",
     "currentFamilyName": "Eva",
     "currentGivenName": "Adams",
@@ -25,7 +25,7 @@
     "type": "EidasSeal2019",
     "created": "2019-06-22T14:11:44Z",
     "proofPurpose": "assertionMethod",
-    "verificationMethod": "did:ebsi:BelgianGovernment#eidasKey",
+    "verificationMethod": "did:sigg:BelgianGovernment#eidasKey",
     "jws": "Proof signature"
   }
 }

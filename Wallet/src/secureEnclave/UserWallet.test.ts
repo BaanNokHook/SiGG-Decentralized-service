@@ -1,4 +1,4 @@
-import { decodeJwt } from "@cef-ebsi/did-jwt";
+import { decodeJwt } from "@cef-sigg/did-jwt";
 import { ethers, providers, Transaction } from "ethers";
 import UserWallet, { IWalletOptions } from "./UserWallet";
 import * as mocks from "../test/mocks/mocks";
@@ -14,7 +14,7 @@ describe("userWallet constructor", () => {
     const wallet = await UserWallet.userWalletBuilder({ password });
     expect(wallet).toBeDefined();
     const did = wallet.getDid();
-    expect(did).toContain("did:ebsi:0x");
+    expect(did).toContain("did:sigg:0x");
     expect(mockGenerateKeys).toHaveBeenCalledTimes(1);
   });
 
@@ -27,7 +27,7 @@ describe("userWallet constructor", () => {
     const wallet = await UserWallet.userWalletBuilder(options);
     expect(wallet).toBeDefined();
     const did = wallet.getDid();
-    expect(did).toContain("did:ebsi:0x");
+    expect(did).toContain("did:sigg:0x");
   });
 
   it("should throw an Error when creating a wallet without password", async () => {

@@ -25,10 +25,10 @@ describe("util test suite", () => {
     expect(mockGenKeyPair).toHaveBeenCalledTimes(1);
   });
 
-  it("should return a did:ebsi from a ethaddress", () => {
+  it("should return a did:sigg from a ethaddress", () => {
     expect.assertions(1);
     const did = getDid(mocks.wallet.ethAddress);
-    expect(did).toBe(`did:ebsi:${mocks.wallet.ethAddress}`);
+    expect(did).toBe(`did:sigg:${mocks.wallet.ethAddress}`);
   });
 
   it("should prefix the keys with 0x if they don't start with 0x", () => {

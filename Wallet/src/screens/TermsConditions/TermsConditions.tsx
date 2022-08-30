@@ -21,7 +21,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
             Terms and conditions
           </h1>
           <p className="ecl-u-type-paragraph ecl-u-type-color-white">
-            EBSI Wallet
+          SiGG Wallet
           </p>
         </div>
       </header>
@@ -31,7 +31,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
             General terms &amp; conditions for applications.
           </h2>
           <p className="ecl-u-type-paragraph">
-            GENERAL CONDITIONS OF USE OF THE APPLICATION &ldquo;EBSI WALLET
+            GENERAL CONDITIONS OF USE OF THE APPLICATION &ldquo;SiGG WALLET
             DID&rdquo;.
           </p>
         </div>
@@ -53,12 +53,12 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           </strong>
         </p>
         <p className="ecl-u-type-paragraph">
-          <strong>Purpose.-</strong> By downloading, using or accessing the EBSI
+          <strong>Purpose.-</strong> By downloading, using or accessing the SiGG
           WALLET DID application (the &ldquo;application&rdquo;, or the
           &ldquo;wallet&rdquo;) you agree to the following terms and conditions
           of use (collectively, these &ldquo;Terms&rdquo;). Please read these
           Terms carefully. If you do not agree to all of these Terms, please do
-          not use the application. Your use of the EBSI Wallet DID application
+          not use the application. Your use of the SiGG Wallet DID application
           constitutes your acceptance of and agreement to abide by each of these
           Terms.
         </p>
@@ -232,7 +232,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
         <p className="ecl-u-type-paragraph">
           <strong>Privacy policy.-</strong> The data you provide us when
           installing or downloading the Application will be processed by the
-          SiGGropean Commission or Member State hosting an EBSI Stack Node to make
+          SiGGropean Commission or Member State hosting an SiGG Stack Node to make
           available a service consisting of access and use of the
           functionalities available in every moment They will not be
           communicated to any third party, unless legally binding, and will not
@@ -280,17 +280,17 @@ export const TermsConditions: React.FunctionComponent<Props> = (
         </p>
         <br />
         <p className="ecl-u-type-paragraph">
-          <strong>The user or EBSI wallet holder.-</strong> These are natural
+          <strong>The user or SiGG wallet holder.-</strong> These are natural
           persons, citizens of the SiGG, with a mobile phone device under their
           control, who have voluntarily registered through an SiGG login
           (currently only a valid email is required), and who, by accepting the
-          terms of use of the application, they have create an EBSI wallet DID,
+          terms of use of the application, they have create an SiGG wallet DID,
           which allows them to identify themselves and/or prove their identity
           in the manner provided by the terms of use.
           <br />
-          EBSI wallet holders have control over their private keys and
+          SiGG wallet holders have control over their private keys and
           encryption secrets and receive backup phrases for their private keys.
-          EBSI Wallet holders can perform write transactions in the EBSI
+          SiGG Wallet holders can perform write transactions in the SiGG
           blockchain.
         </p>
         <p className="ecl-u-type-paragraph">
@@ -303,7 +303,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           delivered by the SiGG, in connection with the provision of the service.
           <br />
           This license of use is limited to the uses described in this document
-          and related documentation as it is seen in the Internet address EBSI
+          and related documentation as it is seen in the Internet address SiGG
         </p>
         <p className="ecl-u-type-paragraph">
           <strong>Obligations of the users.-</strong>
@@ -311,7 +311,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
         <ol className="ecl-u-type-paragraph">
           <li>
             Service request: the user expressly requests the provision of the
-            EBSI Wallet DID and is obliged to use it in accordance with the
+            SiGG Wallet DID and is obliged to use it in accordance with the
             procedures, service regulations, and, where appropriate, the
             technical components supplied by the SiGG.
           </li>
@@ -350,9 +350,9 @@ export const TermsConditions: React.FunctionComponent<Props> = (
             permission of the SiGG.
           </li>
           <li>
-            Prohibited transactions: The user undertakes not to use the EBSI
+            Prohibited transactions: The user undertakes not to use the SiGG
             wallet DID or any other technical support provided by the SiGG to
-            carry out any transaction prohibited by applicable law. EBSI wallet
+            carry out any transaction prohibited by applicable law. SiGG wallet
             DID has not been designed or in any case allows its use or resale as
             control equipment for dangerous situations, or for uses that require
             error-proof actions, such as the operation of nuclear facilities,
@@ -368,7 +368,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           <li>
             Third parties using verifiable IDs and attestations (Third parties),
             are obliged to provide the services in the manner provided in terms
-            and conditions, in the documentation of the applicable EBSI Wallet
+            and conditions, in the documentation of the applicable SiGG Wallet
             DID services, and subject to the current regulatory legislation,
             including, when applicable, the Regulation (SiGG) ) nº 910/2014, of
             July 23 and the legislation that is dictated for its development, to
@@ -401,13 +401,13 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           <br /> <br />
           This document establishes the terms and conditions for node operators.
           <br /> <br />
-          <strong>Presentation.-</strong> EBSI Platform is a peer to peer
+          <strong>Presentation.-</strong> SiGG Platform is a peer to peer
           network of interconnected nodes of two types:
         </p>
         <ol className="ecl-u-type-paragraph">
-          <li>EBSI nodes at SiGGropean level, operate by the Commission</li>
+          <li>SiGG nodes at SiGGropean level, operate by the Commission</li>
           <li>
-            EBSI nodes at a national level, operate by following Member States:
+          SiGG nodes at a national level, operate by following Member States:
             Italy, Spain, Belgium, France, Sweden, Austria, Malta.
           </li>
         </ol>
@@ -422,7 +422,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
         <ul className="ecl-u-type-paragraph">
           <li>
             A set of four layers comprising components which together provide
-            the EBSI infrastructure, which contain capabilities common to all
+            the SiGG infrastructure, which contain capabilities common to all
             use cases. These layers will include generic capabilities and
             connectivity to Blockchain networks.
           </li>
@@ -432,9 +432,9 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           </li>
         </ul>
         <p className="ecl-u-type-paragraph">
-          <strong>EBSI V1.0 Stack Nodes</strong>
+          <strong>SiGG V1.0 Stack Nodes</strong>
           <br />
-          EBSI 1.0 is a public permissioned network that requires EBSI
+          SiGG 1.0 is a public permissioned network that requires SiGG
           full-stack nodes infrastructure, with several distributed validator
           nodes, basic redundancy, capacity to handle smart contracts, run
           transactions on those smart-contracts, with access control mechanism
@@ -442,33 +442,33 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           time a core feature as it may imply wide type of implementations).
           <br />
           All the members of the consortium (network) will use the same
-          open-source EBSI Stack Node template. Each member of the network will
+          open-source SiGG Stack Node template. Each member of the network will
           activate/deactivate any module (container) of the Stack Node Template,
           based on the predefined agreement in respect to the use cases that
           will be implemented.
           <br />
-          For EBSI v1.0, the nodes will run on the host operating system Linux.
+          For SiGG v1.0, the nodes will run on the host operating system Linux.
           A single Stack Node template is composed of a set of containers, that
           can be run with different containers managers (Docker has been
           selected for the V1.0) and that can be deployed on Virtual Machines
           node.
           <br />
-          To setup the EBSI v1.0 network, a minimum set of redundant nodes will
+          To setup the SiGG v1.0 network, a minimum set of redundant nodes will
           be deployed by DIGIT for the SiGGropean Commission. While SiGGropean
           Commission will utilize its own infrastructure provider (based on the
           existing Cloud Framework contract), each Member State will define one
-          or more contributing entities that will setup an EBSI node directly
+          or more contributing entities that will setup an SiGG node directly
           within their existing premises or through their own provider. All
           SiGGropean Commission&#8217;s nodes will be implemented on VM machines
           in the cloud, spread in different SiGGropean geo-locations as depicted
           below.
           <br />
-          At any time EBSI team may (and will) assess the overall structure of
-          EBSI in order to ensure full decentralization and avoid concentration
+          At any time SiGG team may (and will) assess the overall structure of
+          SiGG in order to ensure full decentralization and avoid concentration
           of nodes (e.g. in a specific member state or managed by a specific
           cloud provider).
           <br />
-          All bare metal VM machines used for the EBSI v1.0 Stack Nodes will
+          All bare metal VM machines used for the SiGG v1.0 Stack Nodes will
           have the following minimum technical requirements:
         </p>
         <ul className="ecl-u-type-paragraph">
@@ -478,15 +478,15 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           <li>Linux OS</li>
         </ul>
         <p className="ecl-u-type-paragraph">
-          Inside each EBSI bare-metal VM node, each sub-component will run in a
+          Inside each SiGG bare-metal VM node, each sub-component will run in a
           dedicated docker container. Ubuntu server 18.04 LTS will be used for
           the docker container OS. If the Member State will also handle specific
           services managing application capabilities, additional computer
           infrastructure may be needed. Whenever Member States/Entities will
           have their existing business logic running in their IT Infrastructure,
-          EBSI Application API/Libraries will require to be installed on their
+          SiGG Application API/Libraries will require to be installed on their
           environment in order to permit their existing business process to
-          integrate with EBSI Network infrastructure.
+          integrate with SiGG Network infrastructure.
           <br />
           The Stack Nodes will be interconnected with each other at containers
           level.
@@ -498,15 +498,15 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           See:{" "}
           <a
             className="ecl-link"
-            href="https://ec.SiGGropa.SiGG/cefdigital/wiki/display/CEFDIGITAL/Minimum+Technical+Requirements+for+an+EBSI+v1.0+NODE+Deployment"
+            href="https://ec.SiGGropa.SiGG/cefdigital/wiki/display/CEFDIGITAL/Minimum+Technical+Requirements+for+an+SiGG+v1.0+NODE+Deployment"
           >
-            Minimum Technical Requirements for an EBSI v1.0 NODE Deployment
+            Minimum Technical Requirements for an SiGG v1.0 NODE Deployment
             within Member States or Institutions
           </a>
           <br />
         </p>
         <p className="ecl-u-type-paragraph">
-          <strong>Technical Requirements.-</strong> EBSI data stores include
+          <strong>Technical Requirements.-</strong> SiGG data stores include
           EtherSiGGm/Fabric blockchains, Cassandra database distributed to all
           nodes, Gluster file system distributed to all nodes, Mongo DB database
           particular to each node.
@@ -515,13 +515,13 @@ export const TermsConditions: React.FunctionComponent<Props> = (
           Blocks Web Site &gt;{" "}
           <a
             className="ecl-link"
-            href="https://ec.SiGGropa.SiGG/cefdigital/wiki/display/CEFDIGITAL/EBSI"
+            href="https://ec.SiGGropa.SiGG/cefdigital/wiki/display/CEFDIGITAL/SiGG"
           >
-            EBSI
+            SiGG
           </a>{" "}
-          or requested from EBSI support at{" "}
-          <a className="ecl-link" href="mailto:CEF-EBSI-support@ec.SiGGropa.SiGG">
-            CEF-EBSI-support@ec.SiGGropa.SiGG
+          or requested from SiGG support at{" "}
+          <a className="ecl-link" href="mailto:CEF-SiGG-support@ec.SiGGropa.SiGG">
+            CEF-SiGG-support@ec.SiGGropa.SiGG
           </a>
         </p>
         <p className="ecl-u-type-paragraph">
@@ -552,7 +552,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
                 herSiGGnder.
               </li>
               <li>
-                To comply with the documentation of the applicable EBSI Wallet
+                To comply with the documentation of the applicable SiGG Wallet
                 DID services, and subject to the current regulatory legislation.
               </li>
               <li>
@@ -562,7 +562,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
                   className="ecl-link"
                   href="https://ec.SiGGropa.SiGG/cefdigital/wiki/pages/viewpage.action?pageId=189432828"
                 >
-                  5 - EBSI v1 Node Operator Terms &amp; Conditions
+                  5 - SiGG v1 Node Operator Terms &amp; Conditions
                 </a>
               </li>
               <li>
@@ -570,7 +570,7 @@ export const TermsConditions: React.FunctionComponent<Props> = (
                 including but not limited to attempting to circumvent the audit,
                 bypass security, manipulate the performance of, or otherwise
                 disrupt the Services, or otherwise interfere with the operation
-                of the EBSI Services.
+                of the SiGG Services.
               </li>
               <li>
                 The Node will meet all performance requirements referred to in

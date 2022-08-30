@@ -1208,32 +1208,32 @@
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cef-ebsi/app-jwt@0.0.12":
+"@cef-sigg/app-jwt@0.0.12":
   version "0.0.12"
-  resolved "https://registry.npmjs.org/@cef-ebsi/app-jwt/-/app-jwt-0.0.12.tgz"
+  resolved "https://registry.npmjs.org/@cef-sigg/app-jwt/-/app-jwt-0.0.12.tgz"
   integrity sha512-KjHzfHUZfxhZm7jQwVc3UDdWLJTB5UKwaLjxO0nUeV1pieBk98I4fTFsY2mw8p5HTH4NIQceYMGfthX7zWzR1g==
   dependencies:
-    "@cef-ebsi/did-jwt" "^0.0.10"
-    "@cef-ebsi/problem-details-errors" "^0.0.3"
+    "@cef-sigg/did-jwt" "^0.0.10"
+    "@cef-sigg/problem-details-errors" "^0.0.3"
     axios "^0.21.1"
     ethers "^5.0.8"
     jose "^1.27.3"
 
-"@cef-ebsi/did-auth@0.0.11":
+"@cef-sigg/did-auth@0.0.11":
   version "0.0.11"
-  resolved "https://registry.npmjs.org/@cef-ebsi/did-auth/-/did-auth-0.0.11.tgz"
+  resolved "https://registry.npmjs.org/@cef-sigg/did-auth/-/did-auth-0.0.11.tgz"
   integrity sha512-xeWndJMOLwJm4H4a4zQ0barB5ey6fqZybO/LZGOiDe0NzWVAPWB6FrshxojbVyY0tnvO0+srF/2OAsmEw+HISw==
   dependencies:
-    "@cef-ebsi/did-jwt" "^0.0.10"
+    "@cef-sigg/did-jwt" "^0.0.10"
     axios "^0.21.1"
     did-resolver "^2.0.1"
     elliptic "^6.5.3"
     ethers "^5.0.8"
     uuid "^8.3.0"
 
-"@cef-ebsi/did-jwt@^0.0.10":
+"@cef-sigg/did-jwt@^0.0.10":
   version "0.0.10"
-  resolved "https://registry.npmjs.org/@cef-ebsi/did-jwt/-/did-jwt-0.0.10.tgz"
+  resolved "https://registry.npmjs.org/@cef-sigg/did-jwt/-/did-jwt-0.0.10.tgz"
   integrity sha512-gGYFPf/ufgWIsKiiWKRdHfMqXaZn7zBg8viHMnEd0XY3Dnr+cq5uWCHNjX2PKEJfPtxbdUf7P8c7jl5H2VXjHg==
   dependencies:
     axios "^0.21.1"
@@ -1245,9 +1245,9 @@
     tweetnacl-ts "^1.0.3"
     utf8 "^3.0.0"
 
-"@cef-ebsi/problem-details-errors@^0.0.3":
+"@cef-sigg/problem-details-errors@^0.0.3":
   version "0.0.3"
-  resolved "https://registry.npmjs.org/@cef-ebsi/problem-details-errors/-/problem-details-errors-0.0.3.tgz"
+  resolved "https://registry.npmjs.org/@cef-sigg/problem-details-errors/-/problem-details-errors-0.0.3.tgz"
   integrity sha512-y53GbytGiNVb5KuVHf2PtHJXO1+hj3R4+bZExFso3EBai68NsCAEzZDLr7dqACFjOY8BXkcHalAqWIvUFSOi4w==
 
 "@cnakazawa/watch@^1.0.3":
@@ -1277,9 +1277,9 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@ecl/ec-preset-website@^2.33.0":
+"@ecl/ec-preset-wsiggte@^2.33.0":
   version "2.33.0"
-  resolved "https://registry.npmjs.org/@ecl/ec-preset-website/-/ec-preset-website-2.33.0.tgz"
+  resolved "https://registry.npmjs.org/@ecl/ec-preset-wsiggte/-/ec-preset-wsiggte-2.33.0.tgz"
   integrity sha512-JaxAqU7Cn5ySZ514DtYIkskVmjXWAgGif0bTYzI4R2npd2MVPxz3umNpAeC6QNzZp3wTijuWKbXl5iIrbkZ1hg==
 
 "@eslint/eslintrc@^0.1.3":

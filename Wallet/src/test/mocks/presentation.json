@@ -9,7 +9,7 @@
     "type": "EcdsaSecp256k1Signature2019",
     "created": "2019-06-22T14:11:44Z",
     "proofPurpose": "assertionMethod",
-    "verificationMethod": "did:ebsi:e76fb4b4900#key-1",
+    "verificationMethod": "did:sigg:e76fb4b4900#key-1",
     "challenge": "1f44d55f-f161-4938-a659-f8026467f126",
     "domain": "4jt78h47fh47",
     "jws": "eyJ...78"

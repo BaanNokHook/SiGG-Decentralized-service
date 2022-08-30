@@ -1,4 +1,4 @@
-import { EbsiDidAuth } from "@cef-ebsi/did-auth";
+import { siggDidAuth } from "@cef-sigg/did-auth";
 import SecureEnclave from "../../secureEnclave/SecureEnclave";
 import { createResponse, decryptKeys } from "./DidAuth.utils";
 
@@ -19,7 +19,7 @@ describe("createResponse", () => {
   it("should throw when the wallet can't be found", async () => {
     expect.assertions(1);
 
-    localStorage.setItem("Did", "did:ebsi:0xabc");
+    localStorage.setItem("Did", "did:sigg:0xabc");
 
     await expect(createResponse("nonce", "serviceUrl")).rejects.toThrow(
       new Error("Wallet not found")
@@ -31,7 +31,7 @@ describe("createResponse", () => {
   it("should redirect the user to the expected url", async () => {
     expect.assertions(3);
 
-    localStorage.setItem("Did", "did:ebsi:0xabc");
+    localStorage.setItem("Did", "did:sigg:0xabc");
     const se = SecureEnclave.Instance;
 
     const mockedGetPrivateKey = jest
@@ -39,7 +39,7 @@ describe("createResponse", () => {
       .mockImplementation(() => "privateKey");
 
     const mockedCreateDidAuthResponse = jest
-      .spyOn(EbsiDidAuth, "createDidAuthResponse")
+      .spyOn(siggDidAuth, "createDidAuthResponse")
       .mockImplementation(async () => "jwt");
 
     const mockedLocationAssign = jest
@@ -48,10 +48,10 @@ describe("createResponse", () => {
 
     await createResponse("nonce", "serviceUrl");
 
-    expect(mockedGetPrivateKey).toHaveBeenCalledWith("did:ebsi:0xabc");
+    expect(mockedGetPrivateKey).toHaveBeenCalledWith("did:sigg:0xabc");
     expect(mockedCreateDidAuthResponse).toHaveBeenCalledWith({
       hexPrivatekey: "privateKey",
-      did: "did:ebsi:0xabc",
+      did: "did:sigg:0xabc",
       nonce: "nonce",
       redirectUri: "serviceUrl",
     });

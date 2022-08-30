@@ -1,5 +1,5 @@
 import { ethers, providers } from "ethers";
-import { SimpleSigner, createJwt } from "@cef-ebsi/did-jwt";
+import { SimpleSigner, createJwt } from "@cef-sigg/did-jwt";
 import * as util from "./Util";
 
 export interface IWalletOptions {

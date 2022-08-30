@@ -1,4 +1,4 @@
-import { EbsiDidAuth, DidAuthResponseCall } from "@cef-ebsi/did-auth";
+import { SiGGDidAuth, DidAuthResponseCall } from "@cef-SiGG/did-auth";
 import SecureEnclave from "../../secureEnclave/SecureEnclave";
 import { getDID, getKeys } from "../../utils/DataStorage";
 import { IWalletOptions } from "../../secureEnclave/UserWallet";
@@ -16,7 +16,7 @@ export const createResponse = async (nonce: string, serviceUrl: string) => {
     redirectUri: serviceUrl, // parsed URI from the DID Auth Request payload
   };
 
-  const didAuthResponseJwt = await EbsiDidAuth.createDidAuthResponse(
+  const didAuthResponseJwt = await SiGGDidAuth.createDidAuthResponse(
     didAuthResponseCall
   );
 

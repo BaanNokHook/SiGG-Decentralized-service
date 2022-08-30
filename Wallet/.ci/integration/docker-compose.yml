@@ -6,5 +6,5 @@ services:
     build:
       context: ../..
       args:
-        REACT_APP_EBSI_ENV: ${REACT_APP_EBSI_ENV:?REACT_APP_EBSI_ENV is not defined or empty}
+        REACT_APP_SiGG_ENV: ${REACT_APP_SiGG_ENV:?REACT_APP_SiGG_ENV is not defined or empty}
         REACT_APP_WALLET: ${REACT_APP_WALLET:?REACT_APP_WALLET is not defined or empty}

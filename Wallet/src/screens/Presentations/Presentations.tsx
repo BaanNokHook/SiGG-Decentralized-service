@@ -8,8 +8,8 @@ import { Footer } from "../../components/Footer/Footer";
 import * as tour from "../../utils/Tour";
 import * as models from "../../models/Models";
 import * as idHub from "../../apis/idHub";
-import { ToastEbsi } from "../../components/ToastEbsi/ToastEbsi";
-import { EbsiBanner } from "../../components/EbsiBanner/EbsiBanner";
+import { ToastSiGG } from "../../components/ToastSiGG/ToastSiGG";
+import { Banner } from "../../components/Banner/Banner";
 import CredentialItem from "../../components/CredentialItem/CredentialItem";
 import CredentialModal from "../../components/CredentialModal/CredentialModal";
 import colors from "../../config/colors";
@@ -203,14 +203,14 @@ export class Presentations extends Component<Props, State> {
     return (
       <>
         <Header />
-        <ToastEbsi
+        <ToastSiGG
           isToastOpen={isToastOpen}
           methodToClose={this.closeToast}
           toastColor={toastColor}
           colorText={colors.WHITE}
           toastMessage={toastMessage}
         />
-        <EbsiBanner
+        <Banner
           title="Presentations Page"
           subtitle="List of your presentations history."
           isLoadingOpen={isLoadingOpen}

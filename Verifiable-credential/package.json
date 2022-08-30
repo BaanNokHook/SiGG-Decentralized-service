@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://ec.europa.eu/cefdigital/code/scm/ebsi/diploma.git"
+    "url": "https://ec.europa.eu/cefdigital/code/scm/sigg/diploma.git"
   },
   "license": "EUPL-1.2",
   "scripts": {

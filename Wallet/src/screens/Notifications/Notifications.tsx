@@ -18,8 +18,8 @@ import * as models from "../../models/Models";
 import * as wallet from "../../apis/wallet";
 import { NotificationItem } from "../../components/NotificationItem/NotificationItem";
 import { NotificationModal } from "../../components/NotificationModal/NotificationModal";
-import { ToastEbsi } from "../../components/ToastEbsi/ToastEbsi";
-import { EbsiBanner } from "../../components/EbsiBanner/EbsiBanner";
+import { ToastSiGG } from "../../components/ToastSiGG/ToastSiGG";
+import { Banner } from "../../components/Banner/Banner";
 import REQUIRED_VARIABLES from "../../config/env";
 import { INotification } from "../../dtos/notifications";
 import {
@@ -254,14 +254,14 @@ export const Notifications: React.FunctionComponent<Props> = ({
   return (
     <>
       <Header />
-      <ToastEbsi
+      <ToastSiGG
         isToastOpen={isToastOpen}
         methodToClose={closeToast}
         toastColor={toastColor}
         colorText={colors.WHITE}
         toastMessage={toastMessage}
       />
-      <EbsiBanner
+      <Banner
         title="Notifications Page"
         subtitle="List of the pending notifications to be signed."
         isLoadingOpen={isLoadingOpen}

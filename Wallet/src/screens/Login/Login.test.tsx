@@ -42,7 +42,7 @@ describe("login", () => {
           <div
             class="panelTitle"
           >
-            EBSI Wallet
+            SiGG Wallet
           </div>
           <div
             class="panelBody"
@@ -64,7 +64,7 @@ describe("login", () => {
               <p
                 class="panelBodyText"
               >
-                Authenticate via EU Login to access your EBSI Wallet.
+                Authenticate via EU Login to access your SiGG Wallet.
               </p>
             </div>
             <div
@@ -103,7 +103,7 @@ describe("login", () => {
     expect(historySpy).toHaveBeenCalledWith("/some-other-route");
 
     // The user sees the "Choose method" screen
-    expect(getByText("Welcome on EBSI Wallet!")).toBeDefined();
+    expect(getByText("Welcome on SiGG Wallet!")).toBeDefined();
 
     // Option "Use your existing wallet" should be missing
     expect(() => getByText("Use your existing wallet")).toThrow();
@@ -183,7 +183,7 @@ describe("login", () => {
     );
 
     // The user sees the "Choose method" screen
-    expect(getByText("Welcome back on EBSI Wallet!")).toBeDefined();
+    expect(getByText("Welcome back on SiGG Wallet!")).toBeDefined();
 
     // Option "Use your existing wallet" should be present
     expect(getByText("Use your existing wallet")).toBeDefined();
@@ -250,7 +250,7 @@ describe("login", () => {
     );
 
     // The user sees the "Choose method" screen
-    expect(getByText("Welcome back on EBSI Wallet!")).toBeDefined();
+    expect(getByText("Welcome back on SiGG Wallet!")).toBeDefined();
 
     // The user clicks on "Import an existing wallet"
     const importWalletButton = getByRole("button", {

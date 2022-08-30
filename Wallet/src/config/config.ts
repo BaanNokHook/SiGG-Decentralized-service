@@ -1,4 +1,4 @@
-const COMPONENT_WALLET_ID = "ebsi-wallet";
+const COMPONENT_WALLET_ID = "sigg-wallet";
 
 const NotificationType = [
   "Store My Diploma",
@@ -9,6 +9,6 @@ const NotificationType = [
 ];
 
 const grantType = "urn:ietf:params:oauth:grant-type:jwt-bearer";
-const scope = "ebsi profile user";
+const scope = "sigg profile user";
 
 export { COMPONENT_WALLET_ID, NotificationType, grantType, scope };

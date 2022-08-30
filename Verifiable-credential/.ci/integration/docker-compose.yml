@@ -7,6 +7,6 @@ services:
       context: ../..
       args:
         APP_PUBLIC_URL: ${APP_PUBLIC_URL:?Missing APP_PUBLIC_URL variable}
-        EBSI_ENV: ${EBSI_ENV:?Missing EBSI_ENV variable}
-        EBSI_DEMONSTRATOR_URL: ${EBSI_DEMONSTRATOR_URL:?Missing EBSI_DEMONSTRATOR_URL variable}
-        EBSI_WALLET_WEB_CLIENT_URL: ${EBSI_WALLET_WEB_CLIENT_URL:?Missing EBSI_WALLET_WEB_CLIENT_URL variable}
+        SiGG_ENV: ${SiGG_ENV:?Missing SiGG_ENV variable}
+        SIGG_DEMONSTRATOR_URL: ${SIGG_DEMONSTRATOR_URL:?Missing SIGG_DEMONSTRATOR_URL variable}
+        SIGG_WALLET_WEB_CLIENT_URL: ${SIGG_WALLET_WEB_CLIENT_URL:?Missing SIGG_WALLET_WEB_CLIENT_URL variable}

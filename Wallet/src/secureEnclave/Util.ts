@@ -12,7 +12,7 @@ const generateKeys = (): { publicKey: string; privateKey: string } => {
 };
 
 function getDid(ethAddress: string): string {
-  return `did:ebsi:${ethAddress}`;
+  return `did:sigg:${ethAddress}`;
 }
 
 function prefixWith0x(key: string): string {

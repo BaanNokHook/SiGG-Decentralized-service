@@ -20,8 +20,8 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@cef-ebsi/app-jwt": "0.0.12",
-    "@cef-ebsi/did-auth": "0.0.11",
+    "@cef-sigg/app-jwt": "0.0.12",
+    "@cef-sigg/did-auth": "0.0.11",
     "@hapi/joi": "^17.1.1",
     "@nestjs/common": "^7.6.5",
     "@nestjs/config": "^0.6.2",
