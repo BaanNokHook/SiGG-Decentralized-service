@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://ec.europa.eu/cefdigital/code/scm/ebsi/diploma.git"
+  },
+  "license": "EUPL-1.2",
+  "scripts": {
+    "audit": "audit-ci --moderate",
+    "lint": "yarn workspaces run lint",
+    "lint-staged": "yarn workspaces run lint-staged",
+    "test": "yarn workspaces run test",
+    "test:unit": "yarn workspaces run test:unit"
+  },
+  "devDependencies": {
+    "audit-ci": "^3.1.0",
+    "husky": "^4.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint-staged"
+    }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
