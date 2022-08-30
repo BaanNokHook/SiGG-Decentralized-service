@@ -1,0 +1,44 @@
+pipeline {
+    agent any
+    stages {
+        stage('Setup') {
+            steps{
+                sh "yarn install --frozen-lockfile"
+                sh "yarn run audit"
+            }
+        }
+        stage('Unit Test') {
+            environment{
+                EBSI_ENV='integration'
+                REACT_APP_EBSI_ENV='integration'
+                BACHELOR_ISSUER='ebsi-diploma-bachelor'
+                BACHELOR_PRIVATE_KEY=credentials('BACHELOR_PRIVATE_KEY')
+                MASTER_ISSUER='ebsi-diploma-master'
+                MASTER_PRIVATE_KEY=credentials('MASTER_PRIVATE_KEY')
+            }
+            steps{
+                sh "yarn test:unit"
+            }
+        }
+        stage('SonarQube Analysis') {
+            steps {
+                withSonarQubeEnv('LocalSonar'){
+                    sh "/var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar-scanner/bin/sonar-scanner -Dsonar.host.url=https://infra.ebsi.xyz/sonar -Dsonar.projectName=diploma -Dsonar.projectVersion=1.0 -Dsonar.projectKey=diploma -Dsonar.sources=. -Dsonar.projectBaseDir=${WORKSPACE}"
+                }
+            }
+        }
+        stage("Quality Gate") {
+            steps {
+                waitForQualityGate abortPipeline: true
+            }
+        }
+    }
+    post {
+        always {
+            cleanWs()
+            dir("${env.WORKSPACE}@script") {
+                deleteDir()
+            }
+        }
+    }
+}
