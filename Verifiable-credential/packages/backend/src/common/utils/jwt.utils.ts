@@ -30,7 +30,7 @@ export function isTokenExpired(jwtPayload: JwtPayload) {
   return jwtPayload.exp * 1000 < Date.now();  
 }  
 
-export function generateSelfSignedToken({ audience, iss, privKey }) {  
+export function generateSelfSignedToken({ audience, iss, privKey }) {         
   if (!audience || !iss || !privKey) {
       throw new Error("Invalid parameters");  
   }  
