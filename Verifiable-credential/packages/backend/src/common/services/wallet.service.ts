@@ -2,7 +2,7 @@ import crypto from "crypto";
 import { Injectable, HttpService, Logger } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
 import base64url from "base64url";
-import { EbsiDidAuth, DidAuthRequestCall } from "@cef-ebsi/did-auth";
+import { EbsiDidAuth, DidAuthRequestCall } from "@cef-sigg/did-auth";
 import { Agent, Scope } from "@cef-ebsi/app-jwt";
 import { SessionsResponse } from "../types/sessions.response";
 import { threadId } from "worker_threads";
