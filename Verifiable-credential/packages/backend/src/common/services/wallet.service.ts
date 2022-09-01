@@ -17,7 +17,8 @@ enum NotificationType {
 }
 
 @Injectable()  
-export class WalletService {  
+export class WalletService {
+  [x: string]: any;  
   private readonly logger = new Logger(WalletService.name);  
 
   constructor(
