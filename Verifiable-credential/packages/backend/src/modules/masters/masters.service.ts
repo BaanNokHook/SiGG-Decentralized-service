@@ -22,7 +22,7 @@ import {
     export class MastersService { 
       private readonly logger = new Logger(MastersService.name);  
 
-      constructor(  
+      constructor(     
         private configService: ConfigService,  
         private walletService: WalletService,  
         private readonly http: HttpService 
