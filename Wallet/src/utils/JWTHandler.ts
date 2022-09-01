@@ -1,4 +1,4 @@
-import { JWTClaims } from "@cef-ebsi/did-auth";
+import { JWTClaims } from "@cef-sigg/did-auth";
 
 export interface IUserAuthZToken extends JWTClaims {
   sub: string; // EU Login/ECAS Username that is obtained from the ECAS.
