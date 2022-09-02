@@ -169,7 +169,7 @@ describe("auth", () => {
   it("is not authenticated when JWT is missing some properties", () => {  
     expect.assertions(2);  
 
-    const { getByTestId, getByTestId } = render(  
+    const { getByTestId } = render(  
       <Auth>
       <AuthTest />
     </Auth>
