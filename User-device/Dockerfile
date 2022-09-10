@@ -6,7 +6,7 @@
 #
 # Required ARG variables:
 #   - PUBLIC_URL
-#   - REACT_APP_EBSI_ENV ("local", "integration", "development", "production")
+#   - REACT_APP_SiGG_ENV ("local", "integration", "development", "production")
 #
 # Optional ARG variables:
 #   - REACT_APP_SELF_SOVEREIGN_IDENTITY_URL
@@ -25,7 +25,7 @@ COPY ./yarn.lock /usr/src/app/yarn.lock
 RUN yarn install --frozen-lockfile --silent
 COPY . /usr/src/app/
 ARG PUBLIC_URL
-ARG REACT_APP_EBSI_ENV
+ARG REACT_APP_SiGG_ENV
 ARG REACT_APP_SELF_SOVEREIGN_IDENTITY_URL
 ARG REACT_APP_NOTARISATION_URL
 ARG REACT_APP_DIPLOMA_BACHELOR_URL

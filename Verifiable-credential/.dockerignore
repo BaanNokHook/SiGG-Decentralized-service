@@ -1,0 +1,24 @@
+# Ignore all by default
+*
+
+# Exceptions
+!package.json
+!yarn.lock
+
+# Backend
+!packages/backend/public
+!packages/backend/scripts
+!packages/backend/src
+!packages/backend/package.json
+!packages/backend/tsconfig*.json
+!packages/backend/nest-cli.json
+
+# Frontends
+!packages/bachelor-frontend/public
+!packages/bachelor-frontend/scripts
+!packages/bachelor-frontend/src
+!packages/bachelor-frontend/package.json
+!packages/master-frontend/public
+!packages/master-frontend/scripts
+!packages/master-frontend/src
+!packages/master-frontend/package.json

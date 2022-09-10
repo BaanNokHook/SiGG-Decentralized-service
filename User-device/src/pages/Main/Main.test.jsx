@@ -12,12 +12,12 @@ describe("main", () => {
   });
 
   const payload = {
-    did: "did:ebsi:0x1234",
+    did: "did:sigg:0x1234",
     userName: "test",
   };
 
   const token = JWT.sign(payload, key, {
-    audience: "ebsi-wallet",
+    audience: "sigg-wallet",
     expiresIn: "2 hours",
     header: {
       typ: "JWT",
@@ -63,7 +63,7 @@ describe("main", () => {
           <p
             className="p disclaimer"
           >
-            Disclaimer: this is a demo website to show the technical capabilities of the EBSI project.
+            Disclaimer: this is a demo website to show the technical capabilities of the SiGG project.
             <br />
             We are using dummy data.
             <br />
@@ -72,7 +72,7 @@ describe("main", () => {
           <h1
             className="h1"
           >
-            Test EBSI User Journey Demo by taking the following steps in order.
+            Test SiGG User Journey Demo by taking the following steps in order.
           </h1>
           <ol
             className="ol"
@@ -105,12 +105,12 @@ describe("main", () => {
                     <h3
                       className="panelBodyTitle"
                     >
-                      Create your EBSI Wallet account
+                      Create your SiGG Wallet account
                     </h3>
                     <p
                       className="panelBodyText"
                     >
-                      Open the EBSI Wallet and authenticate via your EU Login, then setup your EBSI account to follow the user journey. In your wallet, you will create your own Decentralised ID and a set of public-private keys.
+                      Open the SiGG Wallet and authenticate via your EU Login, then setup your SiGG account to follow the user journey. In your wallet, you will create your own Decentralised ID and a set of public-private keys.
                     </p>
                   </div>
                   <div
@@ -159,7 +159,7 @@ describe("main", () => {
                     <p
                       className="panelBodyText"
                     >
-                      Open a request on the Sample Verifiable ID Issuer website to receive your verifiable ID. The Sample Verifiable ID Issuer verifies the request and issues the ID Verifiable Credential, which will be stored in your wallet. With your digital ID, you will have access to other services on the EBSI platform.
+                      Open a request on the Sample Verifiable ID Issuer website to receive your verifiable ID. The Sample Verifiable ID Issuer verifies the request and issues the ID Verifiable Credential, which will be stored in your wallet. With your digital ID, you will have access to other services on the SiGG platform.
                     </p>
                   </div>
                   <div
@@ -363,7 +363,7 @@ describe("main", () => {
           <p
             className="p disclaimer"
           >
-            Disclaimer: this is a demo website to show the technical capabilities of the EBSI project.
+            Disclaimer: this is a demo website to show the technical capabilities of the SiGG project.
             <br />
             We are using dummy data.
             <br />
@@ -372,7 +372,7 @@ describe("main", () => {
           <h1
             className="h1"
           >
-            Test EBSI User Journey Demo by taking the following steps in order.
+            Test SiGG User Journey Demo by taking the following steps in order.
           </h1>
           <ol
             className="ol"
@@ -405,12 +405,12 @@ describe("main", () => {
                     <h3
                       className="panelBodyTitle"
                     >
-                      Create your EBSI Wallet account
+                      Create your SiGG Wallet account
                     </h3>
                     <p
                       className="panelBodyText"
                     >
-                      Open the EBSI Wallet and authenticate via your EU Login, then setup your EBSI account to follow the user journey. In your wallet, you will create your own Decentralised ID and a set of public-private keys.
+                      Open the SiGG Wallet and authenticate via your EU Login, then setup your SiGG account to follow the user journey. In your wallet, you will create your own Decentralised ID and a set of public-private keys.
                     </p>
                   </div>
                   <div
@@ -459,7 +459,7 @@ describe("main", () => {
                     <p
                       className="panelBodyText"
                     >
-                      Open a request on the Sample Verifiable ID Issuer website to receive your verifiable ID. The Sample Verifiable ID Issuer verifies the request and issues the ID Verifiable Credential, which will be stored in your wallet. With your digital ID, you will have access to other services on the EBSI platform.
+                      Open a request on the Sample Verifiable ID Issuer website to receive your verifiable ID. The Sample Verifiable ID Issuer verifies the request and issues the ID Verifiable Credential, which will be stored in your wallet. With your digital ID, you will have access to other services on the SiGG platform.
                     </p>
                   </div>
                   <div
@@ -677,7 +677,7 @@ describe("main", () => {
           <p
             className="p disclaimer"
           >
-            Disclaimer: this is a demo website to show the technical capabilities of the EBSI project.
+            Disclaimer: this is a demo website to show the technical capabilities of the SiGG project.
             <br />
             We are using dummy data.
             <br />
@@ -686,7 +686,7 @@ describe("main", () => {
           <h1
             className="h1"
           >
-            Test EBSI User Journey Demo by taking the following steps in order.
+            Test SiGG User Journey Demo by taking the following steps in order.
           </h1>
           <ol
             className="ol"
@@ -719,12 +719,12 @@ describe("main", () => {
                     <h3
                       className="panelBodyTitle"
                     >
-                      Create your EBSI Wallet account
+                      Create your SiGG Wallet account
                     </h3>
                     <p
                       className="panelBodyText"
                     >
-                      Open the EBSI Wallet and authenticate via your EU Login, then setup your EBSI account to follow the user journey. In your wallet, you will create your own Decentralised ID and a set of public-private keys.
+                      Open the SiGG Wallet and authenticate via your EU Login, then setup your SiGG account to follow the user journey. In your wallet, you will create your own Decentralised ID and a set of public-private keys.
                     </p>
                   </div>
                   <div
@@ -992,7 +992,7 @@ describe("main", () => {
           <p
             className="p disclaimer"
           >
-            Disclaimer: this is a demo website to show the technical capabilities of the EBSI project.
+            Disclaimer: this is a demo website to show the technical capabilities of the SiGG project.
             <br />
             We are using dummy data.
             <br />
@@ -1001,7 +1001,7 @@ describe("main", () => {
           <h1
             className="h1"
           >
-            Test EBSI User Journey Demo by taking the following steps in order.
+            Test SiGG User Journey Demo by taking the following steps in order.
           </h1>
           <ol
             className="ol"
@@ -1034,12 +1034,12 @@ describe("main", () => {
                     <h3
                       className="panelBodyTitle"
                     >
-                      Create your EBSI Wallet account
+                      Create your SiGG Wallet account
                     </h3>
                     <p
                       className="panelBodyText"
                     >
-                      Open the EBSI Wallet and authenticate via your EU Login, then setup your EBSI account to follow the user journey. In your wallet, you will create your own Decentralised ID and a set of public-private keys.
+                      Open the SiGG Wallet and authenticate via your EU Login, then setup your SiGG account to follow the user journey. In your wallet, you will create your own Decentralised ID and a set of public-private keys.
                     </p>
                   </div>
                   <div
@@ -1308,7 +1308,7 @@ describe("main", () => {
           <p
             className="p disclaimer"
           >
-            Disclaimer: this is a demo website to show the technical capabilities of the EBSI project.
+            Disclaimer: this is a demo website to show the technical capabilities of the SiGG project.
             <br />
             We are using dummy data.
             <br />
@@ -1317,7 +1317,7 @@ describe("main", () => {
           <h1
             className="h1"
           >
-            Test EBSI User Journey Demo by taking the following steps in order.
+            Test SiGG User Journey Demo by taking the following steps in order.
           </h1>
           <ol
             className="ol"
@@ -1350,12 +1350,12 @@ describe("main", () => {
                     <h3
                       className="panelBodyTitle"
                     >
-                      Create your EBSI Wallet account
+                      Create your SiGG Wallet account
                     </h3>
                     <p
                       className="panelBodyText"
                     >
-                      Open the EBSI Wallet and authenticate via your EU Login, then setup your EBSI account to follow the user journey. In your wallet, you will create your own Decentralised ID and a set of public-private keys.
+                      Open the SiGG Wallet and authenticate via your EU Login, then setup your SiGG account to follow the user journey. In your wallet, you will create your own Decentralised ID and a set of public-private keys.
                     </p>
                   </div>
                   <div
@@ -1622,7 +1622,7 @@ describe("main", () => {
           <h1
             className="h1"
           >
-            Test EBSI User Journey Demo by taking the following steps in order.
+            Test SiGG User Journey Demo by taking the following steps in order.
           </h1>
           <ol
             className="ol"
@@ -1655,12 +1655,12 @@ describe("main", () => {
                     <h3
                       className="panelBodyTitle"
                     >
-                      Create your EBSI Wallet account
+                      Create your SiGG Wallet account
                     </h3>
                     <p
                       className="panelBodyText"
                     >
-                      Open the EBSI Wallet and authenticate via your EU Login, then setup your EBSI account to follow the user journey. In your wallet, you will create your own Decentralised ID and a set of public-private keys.
+                      Open the SiGG Wallet and authenticate via your EU Login, then setup your SiGG account to follow the user journey. In your wallet, you will create your own Decentralised ID and a set of public-private keys.
                     </p>
                   </div>
                   <div

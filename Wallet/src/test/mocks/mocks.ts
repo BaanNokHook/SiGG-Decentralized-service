@@ -11,7 +11,7 @@ export const getCredentials = {
       hash:
         "0x52814a963ff4131353445f42ee664bf632502660f718cfbb6fad3e203e7c17c3",
       id: "cred-c37a7d50-638b-11ea-a961-e72ecff4092c",
-      did: "did:ebsi:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
+      did: "did:sigg:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
       name: "Verifiable ID",
       type: ["VerifiableCredential", "EssifVerifiableID"],
       data: {
@@ -35,7 +35,7 @@ export const getCredentialsVP = {
       hash:
         "0x52814a963ff4131353445f42ee664bf632502660f718cfbb6fad3e203e7c17c3",
       id: "cred-c37a7d50-638b-11ea-a961-e72ecff4092c",
-      did: "did:ebsi:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
+      did: "did:sigg:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
       name: "VerifiablePresentation",
       type: ["VerifiablePresentation"],
       data: {
@@ -56,7 +56,7 @@ export const getCredentialsVP = {
 export const getNotifications = {
   items: [
     {
-      emisor: "did:ebsi:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
+      emisor: "did:sigg:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
       id: "c3b5f000-89e8-11ea-88b7-b759be3ae4e3",
       message: {
         notificationType: 2,
@@ -67,14 +67,14 @@ export const getNotifications = {
           base64:
             "eyJyZXF1ZXN0ZXIiOiJkaWQ6ZWJzaToweEJEQjg2MThERTNlY2RGMzdhNGYxM2NhQUM3ZDlhYmMwOTdiZjlGQzIiLCJ0eXBlIjpbWyJWZXJpZmlhYmxlQ3JlZGVudGlhbCIsIkVzc2lmVmVyaWZpYWJsZUlEIl1dLCJzdWJzY3JpYmVyVVJMIjoiaHR0cHM6Ly9hcGkuZWJzaS54eXovdW5pdmVyc2l0aWVzL2JhY2hlbG9yLXZwIiwicmVkaXJlY3RVUkwiOiJodHRwczovL2FwcC5lYnNpLnh5ei9kZW1vL2ZsZW1pc2gtZ292L2lzc3VlLXZhIn0=",
         },
-        subscriberURL: "https://api.ebsi.xyz/universities/bachelor-vp",
-        redirectURL: "https://app.ebsi.xyz/demo/flemish-gov/issue-va",
+        subscriberURL: "https://api.sigg.xyz/universities/bachelor-vp",
+        redirectURL: "https://app.sigg.xyz/demo/flemish-gov/issue-va",
       },
-      receptor: "did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
+      receptor: "did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
       timestamp: "2020-04-29T07:12:19.724Z",
     },
     {
-      emisor: "did:ebsi:0xE2526ce8F6ac3f146817Bc8Ad6d0601af3A4B19f",
+      emisor: "did:sigg:0xE2526ce8F6ac3f146817Bc8Ad6d0601af3A4B19f",
       id: "daa8e060-89e8-11ea-8f41-0fbb91880dcd",
       message: {
         notificationType: 0,
@@ -88,7 +88,7 @@ export const getNotifications = {
         validationServiceEndpoint:
           "http://localhost:3007/wallet/diploma/validation",
       },
-      receptor: "did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
+      receptor: "did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
       timestamp: "2020-04-29T07:12:58.247Z",
     },
   ],
@@ -109,7 +109,7 @@ export const getCredential = {
   },
   hash: "0x52814a963ff4131353445f42ee664bf632502660f718cfbb6fad3e203e7c17c3",
   id: "cred-c37a7d50-638b-11ea-a961-e72ecff4092c",
-  did: "did:ebsi:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
+  did: "did:sigg:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
   name: "Verifiable ID",
   type: ["Verifiable ID"],
 };
@@ -120,21 +120,21 @@ export const getVID: attributes.IAttribute = {
       "eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSIsImh0dHBzOi8vRUJTSS1XRUJTSVRFLkVVL3NjaGVtYXMvdmMvMjAxOS92MSMiLCJodHRwczovL0VCU0ktV0VCU0lURS5FVS9zY2hlbWFzL2VpZGFzLzIwMTkvdjEjIl0sImlkIjoiZWJzaTp0eXBlLXZlcnNpb24tb2YtdGhlLWNyZWRlbnRpYWwiLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwiRXNzaWZWZXJpZmlhYmxlSUQiXSwiaXNzdWVyIjoiZGlkOmVic2k6MHg3OTQ3NWYwZmZCMTVlRDhjMjdEN0ZlOUEwQ2ViMTU4NUNjM2ZCMUIzIiwiaXNzdWFuY2VEYXRlIjoiMjAyMC0wMy0wOVQxNTo0MDowOC4wMDBaIiwiZXhwaXJhdGlvbkRhdGUiOiIyMDMwLTAzLTA5VDE1OjQwOjA4Ljc0NVoiLCJjcmVkZW50aWFsU3ViamVjdCI6eyJwZXJzb25JZGVudGlmaWVyIjoiQkUvQkUvMDI2MzU1NDJZIiwiY3VycmVudEZhbWlseU5hbWUiOiJWaWxhIiwiY3VycmVudEdpdmVuTmFtZSI6IlhhdmllciIsImJpcnRoTmFtZSI6IlZpbGEiLCJkYXRlT2ZCaXJ0aCI6IjE5OTgtMDItMTQiLCJwbGFjZU9mQmlydGgiOiJiYXJuYSIsImN1cnJlbnRBZGRyZXNzIjoiNDQiLCJnZW5kZXIiOiJNYWxlIiwiaWQiOiJkaWQ6ZWJzaToweGJERUU0YzU4NjQ5NDEzNmMzRDdjZGEzZjFDYTMzMzM5RDE0NTI3MTUiLCJnb3ZJZCI6IiJ9LCJwcm9vZiI6eyJ0eXBlIjoiRWlkYXNTZWFsMjAxOSIsImNyZWF0ZWQiOiIyMDIwLTAzLTA5VDE1OjQwOjA4LjAwMFoiLCJwcm9vZlB1cnBvc2UiOiJhc3NlcnRpb25NZXRob2QiLCJ2ZXJpZmljYXRpb25NZXRob2QiOiJkaWQ6ZWJzaToweDc5NDc1ZjBmZkIxNWVEOGMyN0Q3RmU5QTBDZWIxNTg1Q2MzZkIxQjMjZWlkYXNLZXkiLCJqd3MiOiJleUowZVhBaU9pSktWMVFpTENKaGJHY2lPaUpGVXpJMU5rc3RVaUo5LmV5SnBZWFFpT2pFMU9ETTNOamcwTURnc0luTjFZaUk2SW1ScFpEcGxZbk5wT2pCNFlrUkZSVFJqTlRnMk5EazBNVE0yWXpORU4yTmtZVE5tTVVOaE16TXpNemxFTVRRMU1qY3hOU0lzSW5aaklqcDdJa0JqYjI1MFpYaDBJanBiSW1oMGRIQnpPaTh2ZDNkM0xuY3pMbTl5Wnk4eU1ERTRMMk55WldSbGJuUnBZV3h6TDNZeElpd2lhSFIwY0hNNkx5OUZRbE5KTFZkRlFsTkpWRVV1UlZVdmMyTm9aVzFoY3k5Mll5OHlNREU1TDNZeEl5SXNJbWgwZEhCek9pOHZSVUpUU1MxWFJVSlRTVlJGTGtWVkwzTmphR1Z0WVhNdlpXbGtZWE12TWpBeE9TOTJNU01pWFN3aWFXUWlPaUpsWW5OcE9uUjVjR1V0ZG1WeWMybHZiaTF2WmkxMGFHVXRZM0psWkdWdWRHbGhiQ0lzSW5SNWNHVWlPbHNpVm1WeWFXWnBZV0pzWlVOeVpXUmxiblJwWVd3aUxDSkZjM05wWmxabGNtbG1hV0ZpYkdWSlJDSmRMQ0pqY21Wa1pXNTBhV0ZzVTNWaWFtVmpkQ0k2ZXlKd1pYSnpiMjVKWkdWdWRHbG1hV1Z5SWpvaVFrVXZRa1V2TURJMk16VTFOREpaSWl3aVkzVnljbVZ1ZEVaaGJXbHNlVTVoYldVaU9pSldhV3hoSWl3aVkzVnljbVZ1ZEVkcGRtVnVUbUZ0WlNJNklsaGhkbWxsY2lJc0ltSnBjblJvVG1GdFpTSTZJbFpwYkdFaUxDSmtZWFJsVDJaQ2FYSjBhQ0k2SWpFNU9UZ3RNREl0TVRRaUxDSndiR0ZqWlU5bVFtbHlkR2dpT2lKaVlYSnVZU0lzSW1OMWNuSmxiblJCWkdSeVpYTnpJam9pTkRRaUxDSm5aVzVrWlhJaU9pSk5ZV3hsSWl3aWFXUWlPaUprYVdRNlpXSnphVG93ZUdKRVJVVTBZelU0TmpRNU5ERXpObU16UkRkalpHRXpaakZEWVRNek16TTVSREUwTlRJM01UVWlMQ0puYjNaSlpDSTZJaUo5ZlN3aWFYTnpJam9pWkdsa09tVmljMms2TUhnM09UUTNOV1l3Wm1aQ01UVmxSRGhqTWpkRU4wWmxPVUV3UTJWaU1UVTROVU5qTTJaQ01VSXpJbjAuTkZ2NHZYWTJlTzRvamlTZC1tVUlzY0NpQnFmTk9GNjI1SjB3bF84UlE5VXNGSDd5TXNQTExHSGxkVW8za2t4NDJyd3R0RTJqR1pEWUctWEl3bVoxZkFFIn19",
   },
   dataDecoded:
-    '{"@context":["https://www.w3.org/2018/credentials/v1","https://EBSI-WEBSITE.EU/schemas/vc/2019/v1#","https://EBSI-WEBSITE.EU/schemas/eidas/2019/v1#"],"id":"ebsi:type-version-of-the-credential","type":["VerifiableCredential","EssifVerifiableID"],"issuer":"did:ebsi:0xcDA56e98CD9e454143285b72b5De809e7C40C43F","issuanceDate":"2020-04-28T21:06:46.000Z","expirationDate":"2030-04-28T21:06:46.976Z","credentialSubject":{"personIdentifier":"BE/BE/02635542Y","currentFamilyName":"Bean","currentGivenName":"Alex","birthName":"Bean","dateOfBirth":"1998-02-14","placeOfBirth":"Barcelona","currentAddress":"Brussels","gender":"Male","id":"did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263","govId":""},"proof":{"type":"EidasSeal2019","created":"2020-04-28T21:06:46.000Z","proofPurpose":"assertionMethod","verificationMethod":"did:ebsi:0xcDA56e98CD9e454143285b72b5De809e7C40C43F#eidasKey","jws":"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NkstUiJ9.eyJpYXQiOjE1ODgxMDgwMDYsInN1YiI6ImRpZDplYnNpOjB4ODBDM2UxZDA0NjE1YjNjMkI1ZUYyMkM0MWE1YUY1MkYyMmQzMjI2MyIsInZjIjp7IkBjb250ZXh0IjpbImh0dHBzOi8vd3d3LnczLm9yZy8yMDE4L2NyZWRlbnRpYWxzL3YxIiwiaHR0cHM6Ly9FQlNJLVdFQlNJVEUuRVUvc2NoZW1hcy92Yy8yMDE5L3YxIyIsImh0dHBzOi8vRUJTSS1XRUJTSVRFLkVVL3NjaGVtYXMvZWlkYXMvMjAxOS92MSMiXSwiaWQiOiJlYnNpOnR5cGUtdmVyc2lvbi1vZi10aGUtY3JlZGVudGlhbCIsInR5cGUiOlsiVmVyaWZpYWJsZUNyZWRlbnRpYWwiLCJFc3NpZlZlcmlmaWFibGVJRCJdLCJjcmVkZW50aWFsU3ViamVjdCI6eyJwZXJzb25JZGVudGlmaWVyIjoiQkUvQkUvMDI2MzU1NDJZIiwiY3VycmVudEZhbWlseU5hbWUiOiJCZWFuIiwiY3VycmVudEdpdmVuTmFtZSI6IkFsZXgiLCJiaXJ0aE5hbWUiOiJCZWFuIiwiZGF0ZU9mQmlydGgiOiIxOTk4LTAyLTE0IiwicGxhY2VPZkJpcnRoIjoiQmFyY2Vsb25hIiwiY3VycmVudEFkZHJlc3MiOiJCcnVzc2VscyIsImdlbmRlciI6Ik1hbGUiLCJpZCI6ImRpZDplYnNpOjB4ODBDM2UxZDA0NjE1YjNjMkI1ZUYyMkM0MWE1YUY1MkYyMmQzMjI2MyIsImdvdklkIjoiIn19LCJpc3MiOiJkaWQ6ZWJzaToweDc5NDc1ZjBmZkIxNWVEOGMyN0Q3RmU5QTBDZWIxNTg1Q2MzZkIxQjMifQ.PpxOY_Qd312jUd-uj-NifzhGNgYAmcTiiEUZBcH0VI3AwCmeuxlknjh7TFR-z02BWPCFpZILbmtx-Bx8XkiaKgA"}}',
+    '{"@context":["https://www.w3.org/2018/credentials/v1","https://SiGG-WEBSITE.EU/schemas/vc/2019/v1#","https://SiGG-WEBSITE.EU/schemas/eidas/2019/v1#"],"id":"sigg:type-version-of-the-credential","type":["VerifiableCredential","EssifVerifiableID"],"issuer":"did:sigg:0xcDA56e98CD9e454143285b72b5De809e7C40C43F","issuanceDate":"2020-04-28T21:06:46.000Z","expirationDate":"2030-04-28T21:06:46.976Z","credentialSubject":{"personIdentifier":"BE/BE/02635542Y","currentFamilyName":"Bean","currentGivenName":"Alex","birthName":"Bean","dateOfBirth":"1998-02-14","placeOfBirth":"Barcelona","currentAddress":"Brussels","gender":"Male","id":"did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263","govId":""},"proof":{"type":"EidasSeal2019","created":"2020-04-28T21:06:46.000Z","proofPurpose":"assertionMethod","verificationMethod":"did:sigg:0xcDA56e98CD9e454143285b72b5De809e7C40C43F#eidasKey","jws":"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NkstUiJ9.eyJpYXQiOjE1ODgxMDgwMDYsInN1YiI6ImRpZDplYnNpOjB4ODBDM2UxZDA0NjE1YjNjMkI1ZUYyMkM0MWE1YUY1MkYyMmQzMjI2MyIsInZjIjp7IkBjb250ZXh0IjpbImh0dHBzOi8vd3d3LnczLm9yZy8yMDE4L2NyZWRlbnRpYWxzL3YxIiwiaHR0cHM6Ly9FQlNJLVdFQlNJVEUuRVUvc2NoZW1hcy92Yy8yMDE5L3YxIyIsImh0dHBzOi8vRUJTSS1XRUJTSVRFLkVVL3NjaGVtYXMvZWlkYXMvMjAxOS92MSMiXSwiaWQiOiJlYnNpOnR5cGUtdmVyc2lvbi1vZi10aGUtY3JlZGVudGlhbCIsInR5cGUiOlsiVmVyaWZpYWJsZUNyZWRlbnRpYWwiLCJFc3NpZlZlcmlmaWFibGVJRCJdLCJjcmVkZW50aWFsU3ViamVjdCI6eyJwZXJzb25JZGVudGlmaWVyIjoiQkUvQkUvMDI2MzU1NDJZIiwiY3VycmVudEZhbWlseU5hbWUiOiJCZWFuIiwiY3VycmVudEdpdmVuTmFtZSI6IkFsZXgiLCJiaXJ0aE5hbWUiOiJCZWFuIiwiZGF0ZU9mQmlydGgiOiIxOTk4LTAyLTE0IiwicGxhY2VPZkJpcnRoIjoiQmFyY2Vsb25hIiwiY3VycmVudEFkZHJlc3MiOiJCcnVzc2VscyIsImdlbmRlciI6Ik1hbGUiLCJpZCI6ImRpZDplYnNpOjB4ODBDM2UxZDA0NjE1YjNjMkI1ZUYyMkM0MWE1YUY1MkYyMmQzMjI2MyIsImdvdklkIjoiIn19LCJpc3MiOiJkaWQ6ZWJzaToweDc5NDc1ZjBmZkIxNWVEOGMyN0Q3RmU5QTBDZWIxNTg1Q2MzZkIxQjMifQ.PpxOY_Qd312jUd-uj-NifzhGNgYAmcTiiEUZBcH0VI3AwCmeuxlknjh7TFR-z02BWPCFpZILbmtx-Bx8XkiaKgA"}}',
   hash: "0x52814a963ff4131353445f42ee664bf632502660f718cfbb6fad3e203e7c17c3",
   id: "cred-c37a7d50-638b-11ea-a961-e72ecff4092c",
-  issuer: "did:ebsi:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
+  issuer: "did:sigg:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
   name: "Verifiable ID",
   type: ["Verifiable ID"],
-  did: "did:ebsi:0xbDEE4c586494136c3D7cda3f1Ca33339D1452715",
+  did: "did:sigg:0xbDEE4c586494136c3D7cda3f1Ca33339D1452715",
 };
 
 export const getNotification: INotification = {
   id: "c3b5f000-89e8-11ea-88b7-b759be3ae4e3",
-  receiver: "did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
-  sender: "did:ebsi:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
+  receiver: "did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
+  sender: "did:sigg:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
   message: {
-    didOwner: "did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
+    didOwner: "did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
     notificationType: NotificationType.REQUEST_PRESENTATION,
     name: '["Verifiable ID"]',
     hash: "0x6a1358d06f3fd5aa29e498fe06b8bba5e96ba9aaabee165a54204fba015c9e38",
@@ -142,26 +142,26 @@ export const getNotification: INotification = {
       base64:
         "eyJyZXF1ZXN0ZXIiOiJkaWQ6ZWJzaToweEJEQjg2MThERTNlY2RGMzdhNGYxM2NhQUM3ZDlhYmMwOTdiZjlGQzIiLCJ0eXBlIjpbWyJWZXJpZmlhYmxlQ3JlZGVudGlhbCIsIkVzc2lmVmVyaWZpYWJsZUlEIl1dLCJzdWJzY3JpYmVyVVJMIjoiaHR0cHM6Ly9hcGkuZWJzaS54eXovdW5pdmVyc2l0aWVzL2JhY2hlbG9yLXZwIiwicmVkaXJlY3RVUkwiOiJodHRwczovL2FwcC5lYnNpLnh5ei9kZW1vL2ZsZW1pc2gtZ292L2lzc3VlLXZhIn0=",
     },
-    subscriberURL: "https://api.ebsi.xyz/universities/bachelor-vp",
-    redirectURL: "https://app.ebsi.xyz/demo/flemish-gov/issue-va",
+    subscriberURL: "https://api.sigg.xyz/universities/bachelor-vp",
+    redirectURL: "https://app.sigg.xyz/demo/flemish-gov/issue-va",
     timestamp: "2020-04-29T07:12:19.724Z",
   },
   selectedCredentials: [],
   selectedCredsTypes: [],
   dataDecoded:
-    '{"@context":["https://www.w3.org/2018/credentials/v1","https://EBSI-WEBSITE.EU/schemas/vc/2019/v1#","https://EBSI-WEBSITE.EU/schemas/eidas/2019/v1#"],"id":"ebsi:type-version-of-the-credential","type":["VerifiableCredential","EssifVerifiableID"],"issuer":"did:ebsi:0xcDA56e98CD9e454143285b72b5De809e7C40C43F","issuanceDate":"2020-04-28T21:06:46.000Z","expirationDate":"2030-04-28T21:06:46.976Z","credentialSubject":{"personIdentifier":"BE/BE/02635542Y","currentFamilyName":"Bean","currentGivenName":"Alex","birthName":"Bean","dateOfBirth":"1998-02-14","placeOfBirth":"Barcelona","currentAddress":"Brussels","gender":"Male","id":"did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263","govId":""},"proof":{"type":"EidasSeal2019","created":"2020-04-28T21:06:46.000Z","proofPurpose":"assertionMethod","verificationMethod":"did:ebsi:0xcDA56e98CD9e454143285b72b5De809e7C40C43F#eidasKey","jws":"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NkstUiJ9.eyJpYXQiOjE1ODgxMDgwMDYsInN1YiI6ImRpZDplYnNpOjB4ODBDM2UxZDA0NjE1YjNjMkI1ZUYyMkM0MWE1YUY1MkYyMmQzMjI2MyIsInZjIjp7IkBjb250ZXh0IjpbImh0dHBzOi8vd3d3LnczLm9yZy8yMDE4L2NyZWRlbnRpYWxzL3YxIiwiaHR0cHM6Ly9FQlNJLVdFQlNJVEUuRVUvc2NoZW1hcy92Yy8yMDE5L3YxIyIsImh0dHBzOi8vRUJTSS1XRUJTSVRFLkVVL3NjaGVtYXMvZWlkYXMvMjAxOS92MSMiXSwiaWQiOiJlYnNpOnR5cGUtdmVyc2lvbi1vZi10aGUtY3JlZGVudGlhbCIsInR5cGUiOlsiVmVyaWZpYWJsZUNyZWRlbnRpYWwiLCJFc3NpZlZlcmlmaWFibGVJRCJdLCJjcmVkZW50aWFsU3ViamVjdCI6eyJwZXJzb25JZGVudGlmaWVyIjoiQkUvQkUvMDI2MzU1NDJZIiwiY3VycmVudEZhbWlseU5hbWUiOiJCZWFuIiwiY3VycmVudEdpdmVuTmFtZSI6IkFsZXgiLCJiaXJ0aE5hbWUiOiJCZWFuIiwiZGF0ZU9mQmlydGgiOiIxOTk4LTAyLTE0IiwicGxhY2VPZkJpcnRoIjoiQmFyY2Vsb25hIiwiY3VycmVudEFkZHJlc3MiOiJCcnVzc2VscyIsImdlbmRlciI6Ik1hbGUiLCJpZCI6ImRpZDplYnNpOjB4ODBDM2UxZDA0NjE1YjNjMkI1ZUYyMkM0MWE1YUY1MkYyMmQzMjI2MyIsImdvdklkIjoiIn19LCJpc3MiOiJkaWQ6ZWJzaToweDc5NDc1ZjBmZkIxNWVEOGMyN0Q3RmU5QTBDZWIxNTg1Q2MzZkIxQjMifQ.PpxOY_Qd312jUd-uj-NifzhGNgYAmcTiiEUZBcH0VI3AwCmeuxlknjh7TFR-z02BWPCFpZILbmtx-Bx8XkiaKgA"}}',
+    '{"@context":["https://www.w3.org/2018/credentials/v1","https://SiGG-WEBSITE.EU/schemas/vc/2019/v1#","https://SiGG-WEBSITE.EU/schemas/eidas/2019/v1#"],"id":"sigg:type-version-of-the-credential","type":["VerifiableCredential","EssifVerifiableID"],"issuer":"did:sigg:0xcDA56e98CD9e454143285b72b5De809e7C40C43F","issuanceDate":"2020-04-28T21:06:46.000Z","expirationDate":"2030-04-28T21:06:46.976Z","credentialSubject":{"personIdentifier":"BE/BE/02635542Y","currentFamilyName":"Bean","currentGivenName":"Alex","birthName":"Bean","dateOfBirth":"1998-02-14","placeOfBirth":"Barcelona","currentAddress":"Brussels","gender":"Male","id":"did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263","govId":""},"proof":{"type":"EidasSeal2019","created":"2020-04-28T21:06:46.000Z","proofPurpose":"assertionMethod","verificationMethod":"did:sigg:0xcDA56e98CD9e454143285b72b5De809e7C40C43F#eidasKey","jws":"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NkstUiJ9.eyJpYXQiOjE1ODgxMDgwMDYsInN1YiI6ImRpZDplYnNpOjB4ODBDM2UxZDA0NjE1YjNjMkI1ZUYyMkM0MWE1YUY1MkYyMmQzMjI2MyIsInZjIjp7IkBjb250ZXh0IjpbImh0dHBzOi8vd3d3LnczLm9yZy8yMDE4L2NyZWRlbnRpYWxzL3YxIiwiaHR0cHM6Ly9FQlNJLVdFQlNJVEUuRVUvc2NoZW1hcy92Yy8yMDE5L3YxIyIsImh0dHBzOi8vRUJTSS1XRUJTSVRFLkVVL3NjaGVtYXMvZWlkYXMvMjAxOS92MSMiXSwiaWQiOiJlYnNpOnR5cGUtdmVyc2lvbi1vZi10aGUtY3JlZGVudGlhbCIsInR5cGUiOlsiVmVyaWZpYWJsZUNyZWRlbnRpYWwiLCJFc3NpZlZlcmlmaWFibGVJRCJdLCJjcmVkZW50aWFsU3ViamVjdCI6eyJwZXJzb25JZGVudGlmaWVyIjoiQkUvQkUvMDI2MzU1NDJZIiwiY3VycmVudEZhbWlseU5hbWUiOiJCZWFuIiwiY3VycmVudEdpdmVuTmFtZSI6IkFsZXgiLCJiaXJ0aE5hbWUiOiJCZWFuIiwiZGF0ZU9mQmlydGgiOiIxOTk4LTAyLTE0IiwicGxhY2VPZkJpcnRoIjoiQmFyY2Vsb25hIiwiY3VycmVudEFkZHJlc3MiOiJCcnVzc2VscyIsImdlbmRlciI6Ik1hbGUiLCJpZCI6ImRpZDplYnNpOjB4ODBDM2UxZDA0NjE1YjNjMkI1ZUYyMkM0MWE1YUY1MkYyMmQzMjI2MyIsImdvdklkIjoiIn19LCJpc3MiOiJkaWQ6ZWJzaToweDc5NDc1ZjBmZkIxNWVEOGMyN0Q3RmU5QTBDZWIxNTg1Q2MzZkIxQjMifQ.PpxOY_Qd312jUd-uj-NifzhGNgYAmcTiiEUZBcH0VI3AwCmeuxlknjh7TFR-z02BWPCFpZILbmtx-Bx8XkiaKgA"}}',
 };
 
 export const getStoreCredentialNotification: INotification = {
   id: "c3b5f000-89e8-11ea-88b7-b759be3ae4e3",
-  receiver: "did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
-  sender: "did:ebsi:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
+  receiver: "did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
+  sender: "did:sigg:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
   message: {
     data: {
       base64: "some data encoded as base64",
     },
     hash: "c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
-    didOwner: "did:ebsi:0x16048B83FAdaCdCB20198ABc45562Df1A3e289aF",
+    didOwner: "did:sigg:0x16048B83FAdaCdCB20198ABc45562Df1A3e289aF",
     notificationType: NotificationType.STORE_CREDENTIAL,
     name: "a name",
   },
@@ -171,14 +171,14 @@ export const getStoreCredentialNotification: INotification = {
 
 export const getSignPayloadNotification: INotification = {
   id: "c3b5f000-89e8-11ea-88b7-b759be3ae4e3",
-  receiver: "did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
-  sender: "did:ebsi:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
+  receiver: "did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
+  sender: "did:sigg:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
   message: {
     data: {
       base64: "some data encoded as base64",
     },
     hash: "c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
-    didOwner: "did:ebsi:0x16048B83FAdaCdCB20198ABc45562Df1A3e289aF",
+    didOwner: "did:sigg:0x16048B83FAdaCdCB20198ABc45562Df1A3e289aF",
     notificationType: NotificationType.SIGN_PAYLOAD,
     name: "a name",
   },
@@ -188,14 +188,14 @@ export const getSignPayloadNotification: INotification = {
 
 export const getSignTransactionNotification: INotification = {
   id: "c3b5f000-89e8-11ea-88b7-b759be3ae4e3",
-  receiver: "did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
-  sender: "did:ebsi:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
+  receiver: "did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
+  sender: "did:sigg:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
   message: {
     data: {
       base64: "some data encoded as base64",
     },
     hash: "c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
-    didOwner: "did:ebsi:0x16048B83FAdaCdCB20198ABc45562Df1A3e289aF",
+    didOwner: "did:sigg:0x16048B83FAdaCdCB20198ABc45562Df1A3e289aF",
     notificationType: NotificationType.SIGN_TX,
     name: "a name",
   },
@@ -205,14 +205,14 @@ export const getSignTransactionNotification: INotification = {
 
 export const getUnknownNotification: INotification = {
   id: "c3b5f000-89e8-11ea-88b7-b759be3ae4e3",
-  receiver: "did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
-  sender: "did:ebsi:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
+  receiver: "did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
+  sender: "did:sigg:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
   message: {
     data: {
       base64: "some data encoded as base64",
     },
     hash: "c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
-    didOwner: "did:ebsi:0x16048B83FAdaCdCB20198ABc45562Df1A3e289aF",
+    didOwner: "did:sigg:0x16048B83FAdaCdCB20198ABc45562Df1A3e289aF",
     notificationType: NotificationType.NONE,
     name: "a name",
   },
@@ -221,7 +221,7 @@ export const getUnknownNotification: INotification = {
 };
 
 export const getNotificationToSign = {
-  emisor: "did:ebsi:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
+  emisor: "did:sigg:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
   id: "c3b5f000-89e8-11ea-88b7-b759be3ae4e3",
   message: {
     notificationType: 3,
@@ -231,10 +231,10 @@ export const getNotificationToSign = {
       base64:
         "eyJyZXF1ZXN0ZXIiOiJkaWQ6ZWJzaToweEJEQjg2MThERTNlY2RGMzdhNGYxM2NhQUM3ZDlhYmMwOTdiZjlGQzIiLCJ0eXBlIjpbWyJWZXJpZmlhYmxlQ3JlZGVudGlhbCIsIkVzc2lmVmVyaWZpYWJsZUlEIl1dLCJzdWJzY3JpYmVyVVJMIjoiaHR0cHM6Ly9hcGkuZWJzaS54eXovdW5pdmVyc2l0aWVzL2JhY2hlbG9yLXZwIiwicmVkaXJlY3RVUkwiOiJodHRwczovL2FwcC5lYnNpLnh5ei9kZW1vL2ZsZW1pc2gtZ292L2lzc3VlLXZhIn0=",
     },
-    subscriberURL: "https://api.ebsi.xyz/universities/bachelor-vp",
-    redirectURL: "https://app.ebsi.xyz/demo/flemish-gov/issue-va",
+    subscriberURL: "https://api.sigg.xyz/universities/bachelor-vp",
+    redirectURL: "https://app.sigg.xyz/demo/flemish-gov/issue-va",
   },
-  receptor: "did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
+  receptor: "did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
   timestamp: "2020-04-29T07:12:19.724Z",
 };
 
@@ -258,7 +258,7 @@ export const ticket =
 export const ticketUrl =
   "?ticket=ST-47490980-anop8SmoWBdI58D8b1p45jECMYQOxN3SgdWyXVLbzbPvQuDJpv3vr6oakdVCGKRE4BkQOlZ9dzKk6ENFgzLGbHm-jpJZscgsw0Kbzv0qZfUQt1-JXUKZK3btNzQhf0I5QlzISceHNQeaj4JSmCmOslBd2cFt0D9zUhM9Nm5mMP0zZNN6NidCboI4jobDG8UZ4gyMjW";
 
-export const did = "did:ebsi:0x87Af15Ee9E19c5D1D042E4E9e2a5C449d4A14078";
+export const did = "did:sigg:0x87Af15Ee9E19c5D1D042E4E9e2a5C449d4A14078";
 
 export const keys = {
   address: "80c3e1d04615b3c2b5ef22c41a5af52f22d32263",
@@ -304,7 +304,7 @@ export const UserWallet = {
   encryptedKey:
     '{"address":"de2cece2c82498645c4e73d9c4a43f25883f9af7","id":"0682e3fb-fcee-4a2f-8c82-c85aef384141","version":3,"Crypto":{"cipher":"aes-128-ctr","cipherparams":{"iv":"c3c638683c7d35abd6b339f3b76ee98c"},"ciphertext":"10def415a95a8826cbce484a94c096f09a9b04eb38d66747cbc2a8eb676e887e","kdf":"scrypt","kdfparams":{"salt":"7a087eab9b2f25729d3749a72e6459690542c5c95fc2ee5bd2b9bded7cdbc2ae","n":131072,"dklen":32,"p":1,"r":8},"mac":"68af2dd147b2ac901d7d9837e183f502697213d9e047cf174e289ccc48790d61"}}',
   getDid() {
-    return "did:ebsi:0xde2CECE2C82498645C4e73d9C4A43f25883f9af7";
+    return "did:sigg:0xde2CECE2C82498645C4e73d9C4A43f25883f9af7";
   },
   publicKey() {
     return "0x04c7c38317793b771b346da1d93866502b0cd23e667569db6621c9eb5e914f41d08be659b7d792ca3081200d0b7290251c2985e1da0e04f39356c48e8ec90d372e";
@@ -337,7 +337,7 @@ export const newKeys = {
 
 export const mockedGetDID = {
   ethAddress: "0xde2CECE2C82498645C4e73d9C4A43f25883f9af7",
-  did: "did:ebsi:0xde2CECE2C82498645C4e73d9C4A43f25883f9af7",
+  did: "did:sigg:0xde2CECE2C82498645C4e73d9C4A43f25883f9af7",
 };
 
 export const userJwt =
@@ -352,7 +352,7 @@ export const bodyToSign: NotificationsOptions = {
 };
 
 export const didAuth =
-  "https://app.ebsi.xyz/demo/wallet?did-auth=openid://?scope=openid://&scope=openid%20did_authn?response_type=id_token&client_id=https://localhost:8080/demo/spanish-university&request=eyJhbGciOiJFUzI1NkstUiIsInR5cCI6IkpXVCIsImtpZCI6ImRpZDplYnNpOjB4YzcyODFDMDQxMkRiYUE4ZTYwNzMzMzJGRjJGNEI2YzFGRkY5ZDc0ZiNrZXktMSJ9.eyJpYXQiOjE1ODczODgwMDYsImV4cCI6MTU4NzM4ODMwNiwiaXNzIjoiZGlkOmVic2k6MHhjNzI4MUMwNDEyRGJhQThlNjA3MzMzMkZGMkY0QjZjMUZGRjlkNzRmIiwic2NvcGUiOiJvcGVuaWQgZGlkX2F1dGhuIiwicmVzcG9uc2VfdHlwZSI6ImlkX3Rva2VuIiwiY2xpZW50X2lkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODA4MC9kZW1vL3NwYW5pc2gtdW5pdmVyc2l0eSIsIm5vbmNlIjoiZmEyY2U1NjEtOWFiZC00Y2JiLTg3YjUtNjBkMjRmYmFiYzYxIn0.uCuvZLCPWIdthAf2oJSSuzT4goKkXaNL_fM_qTSMnb3p7wad0-QLCJ4B4E21hkDRtFYShsR8bP2s9C31kba1mAA";
+  "https://app.sigg.xyz/demo/wallet?did-auth=openid://?scope=openid://&scope=openid%20did_authn?response_type=id_token&client_id=https://localhost:8080/demo/spanish-university&request=eyJhbGciOiJFUzI1NkstUiIsInR5cCI6IkpXVCIsImtpZCI6ImRpZDplYnNpOjB4YzcyODFDMDQxMkRiYUE4ZTYwNzMzMzJGRjJGNEI2YzFGRkY5ZDc0ZiNrZXktMSJ9.eyJpYXQiOjE1ODczODgwMDYsImV4cCI6MTU4NzM4ODMwNiwiaXNzIjoiZGlkOmVic2k6MHhjNzI4MUMwNDEyRGJhQThlNjA3MzMzMkZGMkY0QjZjMUZGRjlkNzRmIiwic2NvcGUiOiJvcGVuaWQgZGlkX2F1dGhuIiwicmVzcG9uc2VfdHlwZSI6ImlkX3Rva2VuIiwiY2xpZW50X2lkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODA4MC9kZW1vL3NwYW5pc2gtdW5pdmVyc2l0eSIsIm5vbmNlIjoiZmEyY2U1NjEtOWFiZC00Y2JiLTg3YjUtNjBkMjRmYmFiYzYxIn0.uCuvZLCPWIdthAf2oJSSuzT4goKkXaNL_fM_qTSMnb3p7wad0-QLCJ4B4E21hkDRtFYShsR8bP2s9C31kba1mAA";
 
 export const keyPairEC = {
   ec: {

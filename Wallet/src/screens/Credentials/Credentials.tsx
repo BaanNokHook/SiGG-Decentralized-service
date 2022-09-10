@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import "./Credentials.css";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import Tour from "reactour";
-import eclIcons from "@ecl/ec-preset-website/dist/images/icons/sprites/icons.svg";
+import eclIcons from "@ecl/ec-preset-wSiGGte/dist/images/icons/sprites/icons.svg";
 import { Header } from "../../components/Header/Header";
-import { EbsiBanner } from "../../components/EbsiBanner/EbsiBanner";
+import { Banner } from "../../components/Banner/Banner";
 import { Footer } from "../../components/Footer/Footer";
 import CredentialItem from "../../components/CredentialItem/CredentialItem";
-import { ToastEbsi } from "../../components/ToastEbsi/ToastEbsi";
+import { ToastSiGG } from "../../components/ToastSiGG/ToastSiGG";
 import CredentialModal from "../../components/CredentialModal/CredentialModal";
 import colors from "../../config/colors";
 import { getJWT, connectionNotEstablished } from "../../utils/DataStorage";
@@ -215,14 +215,14 @@ export class Credentials extends Component<Props, State> {
     return (
       <>
         <Header />
-        <ToastEbsi
+        <ToastSiGG
           isToastOpen={isToastOpen}
           methodToClose={this.closeToast}
           toastColor={toastColor}
           colorText={colors.WHITE}
           toastMessage={toastMessage}
         />
-        <EbsiBanner
+        <SiGGBanner
           title="Credentials Page"
           subtitle="List of your credentials."
           isLoadingOpen={isLoadingOpen}

@@ -14,7 +14,7 @@ import {
   getDID,
   getJWT,
 } from "../../utils/DataStorage";
-import { EbsiBanner } from "../../components/EbsiBanner/EbsiBanner";
+import { Banner } from "../../components/Banner/Banner";
 import * as tour from "../../utils/Tour";
 import * as models from "../../models/Models";
 import * as idHub from "../../apis/idHub";
@@ -178,7 +178,7 @@ export class Profile extends Component<Props, State> {
     return (
       <>
         <Header />
-        <EbsiBanner title="Welcome to your EBSI wallet" subtitle="My Profile" />
+        <Banner title="Welcome to your SiGG wallet" subtitle="My Profile" />
         <main className="ecl-container ecl-u-flex-grow-1 ecl-u-mb-l">
           <div className="ecl-row">
             <div className="ecl-col-lg-4">

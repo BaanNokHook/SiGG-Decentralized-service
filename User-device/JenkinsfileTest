@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Unit Test') {
             environment {
-                REACT_APP_EBSI_ENV='integration'
+                REACT_APP_SiGG_ENV='integration'
             }
             steps{
                 sh "yarn test"
@@ -17,7 +17,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('LocalSonar'){
-                    sh "/var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar-scanner/bin/sonar-scanner -Dsonar.host.url=https://infra.ebsi.xyz/sonar -Dsonar.projectName=demo-homepage -Dsonar.projectVersion=1.0 -Dsonar.projectKey=demo-homepage -Dsonar.sources=. -Dsonar.projectBaseDir=${WORKSPACE}"
+                    sh "/var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar-scanner/bin/sonar-scanner -Dsonar.host.url=https://infra.sigg.xyz/sonar -Dsonar.projectName=demo-homepage -Dsonar.projectVersion=1.0 -Dsonar.projectKey=demo-homepage -Dsonar.sources=. -Dsonar.projectBaseDir=${WORKSPACE}"
                 }
             }
         }

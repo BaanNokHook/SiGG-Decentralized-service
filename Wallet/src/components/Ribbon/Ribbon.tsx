@@ -14,7 +14,7 @@ export const Ribbon: React.FunctionComponent = () => (
     </Container>
     <div className="ribbon" data-tut="reactour_header">
       <a className="ribbonText" href={DEMONSTRATOR_URL}>
-        EBSI DEMO
+        SiGG DEMO
       </a>
     </div>
   </>

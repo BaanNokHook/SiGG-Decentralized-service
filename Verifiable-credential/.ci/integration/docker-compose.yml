@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  diploma:
+    image: 305472350643.dkr.ecr.eu-central-1.amazonaws.com/intebsi/diploma:integration_ebsiint-2584-audit-fix_v1.0.0
+    build:
+      context: ../..
+      args:
+        APP_PUBLIC_URL: ${APP_PUBLIC_URL:?Missing APP_PUBLIC_URL variable}
+        SiGG_ENV: ${SiGG_ENV:?Missing SiGG_ENV variable}
+        SIGG_DEMONSTRATOR_URL: ${SIGG_DEMONSTRATOR_URL:?Missing SIGG_DEMONSTRATOR_URL variable}
+        SIGG_WALLET_WEB_CLIENT_URL: ${SIGG_WALLET_WEB_CLIENT_URL:?Missing SIGG_WALLET_WEB_CLIENT_URL variable}

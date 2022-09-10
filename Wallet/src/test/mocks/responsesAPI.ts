@@ -6,7 +6,7 @@ export const getCredentials = {
         hash:
           "0x52814a963ff4131353445f42ee664bf632502660f718cfbb6fad3e203e7c17c3",
         id: "cred-c37a7d50-638b-11ea-a961-e72ecff4092c",
-        did: "did:ebsi:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
+        did: "did:sigg:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
         name: "Verifiable ID",
         type: ["VerifiableCredential", "EssifVerifiableID"],
         data: {
@@ -35,7 +35,7 @@ export const getCredential = {
     },
     hash: "0x52814a963ff4131353445f42ee664bf632502660f718cfbb6fad3e203e7c17c3",
     id: "cred-c37a7d50-638b-11ea-a961-e72ecff4092c",
-    did: "did:ebsi:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
+    did: "did:sigg:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
     name: "Verifiable ID",
     type: ["Verifiable ID"],
   },
@@ -49,7 +49,7 @@ export const getCredentialsVP = {
         hash:
           "0x52814a963ff4131353445f42ee664bf632502660f718cfbb6fad3e203e7c17c3",
         id: "cred-c37a7d50-638b-11ea-a961-e72ecff4092c",
-        did: "did:ebsi:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
+        did: "did:sigg:0xcDA56e98CD9e454143285b72b5De809e7C40C43F",
         name: "VerifiablePresentation",
         type: ["VerifiablePresentation"],
         data: {
@@ -85,7 +85,7 @@ export const getNotifications = {
   data: {
     items: [
       {
-        emisor: "did:ebsi:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
+        emisor: "did:sigg:0xBDB8618DE3ecdF37a4f13caAC7d9abc097bf9FC2",
         id: "c3b5f000-89e8-11ea-88b7-b759be3ae4e3",
         message: {
           notificationType: 2,
@@ -99,11 +99,11 @@ export const getNotifications = {
           subscriberURL: "https://api.ebsi.xyz/universities/bachelor-vp",
           redirectURL: "https://app.ebsi.xyz/demo/flemish-gov/issue-va",
         },
-        receptor: "did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
+        receptor: "did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
         timestamp: "2020-04-29T07:12:19.724Z",
       },
       {
-        emisor: "did:ebsi:0xE2526ce8F6ac3f146817Bc8Ad6d0601af3A4B19f",
+        emisor: "did:sigg:0xE2526ce8F6ac3f146817Bc8Ad6d0601af3A4B19f",
         id: "daa8e060-89e8-11ea-8f41-0fbb91880dcd",
         message: {
           notificationType: 0,
@@ -117,7 +117,7 @@ export const getNotifications = {
           validationServiceEndpoint:
             "http://localhost:3007/wallet/diploma/validation",
         },
-        receptor: "did:ebsi:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
+        receptor: "did:sigg:0x80C3e1d04615b3c2B5eF22C41a5aF52F22d32263",
         timestamp: "2020-04-29T07:12:58.247Z",
       },
     ],

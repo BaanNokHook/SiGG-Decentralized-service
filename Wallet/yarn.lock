@@ -1167,9 +1167,9 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cef-ebsi/did-auth@0.0.11":
+"@cef-sigg/did-auth@0.0.11":
   version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@cef-ebsi/did-auth/-/did-auth-0.0.11.tgz#4fc5590340a0a9b18a0f8834fe6523c6398e67a0"
+  resolved "https://registry.yarnpkg.com/@cef-sigg/did-auth/-/did-auth-0.0.11.tgz#4fc5590340a0a9b18a0f8834fe6523c6398e67a0"
   integrity sha512-xeWndJMOLwJm4H4a4zQ0barB5ey6fqZybO/LZGOiDe0NzWVAPWB6FrshxojbVyY0tnvO0+srF/2OAsmEw+HISw==
   dependencies:
     "@cef-ebsi/did-jwt" "^0.0.10"

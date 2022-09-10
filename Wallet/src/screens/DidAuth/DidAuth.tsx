@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { Modal } from "react-bootstrap";
 import classNames from "classnames";
-import { EbsiDidAuth, DidAuthRequestPayload } from "@cef-ebsi/did-auth";
+import { EbsiDidAuth, DidAuthRequestPayload } from "@cef-sigg/did-auth";
 import eclIcons from "@ecl/ec-preset-website/dist/images/icons/sprites/icons.svg";
 import { parseJwt } from "../../utils/JWTHandler";
 import { Panel, PanelTitle } from "../../components/Panel/Panel";

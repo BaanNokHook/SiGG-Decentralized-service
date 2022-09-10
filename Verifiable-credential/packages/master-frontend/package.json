@@ -1,0 +1,86 @@
+{
+  "private": true,
+  "name": "master-frontend",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production node ./scripts/check-vars.js && cross-env EXTEND_ESLINT=true SKIP_PREFLIGHT_CHECK=true INLINE_RUNTIME_CHUNK=false react-scripts build",
+    "lint": "run-s lint:*",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:js": "eslint . --ext .js,.jsx",
+    "lint:prettier": "prettier . --check",
+    "lint-staged": "lint-staged",
+    "start": "cross-env NODE_ENV=development node ./scripts/check-vars.js && cross-env EXTEND_ESLINT=true SKIP_PREFLIGHT_CHECK=true react-scripts start",
+    "test": "yarn run test:unit",
+    "test:dev": "SKIP_PREFLIGHT_CHECK=true react-scripts test",
+    "test:unit": "SKIP_PREFLIGHT_CHECK=true react-scripts test --watchAll=false --coverage --reporters=default --reporters=jest-sonar"
+  },
+  "dependencies": {
+    "@ecl/ec-preset-website": "^2.33.0",
+    "classnames": "^2.2.6",
+    "history": "^4.10.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^10.4.8",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "jest-sonar": "^0.2.11",
+    "jose": "^1.28.0",
+    "lint-staged": "^10.4.0",
+    "mutationobserver-shim": "^0.3.7",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.2",
+    "react-scripts": "^3.4.4",
+    "react-test-renderer": "^16.13.1",
+    "stylelint": "^13.7.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "typescript": "^3.9.7"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "airbnb",
+      "airbnb/hooks",
+      "plugin:jest/all",
+      "plugin:prettier/recommended",
+      "prettier/react"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/env.js",
+      "!src/index.js"
+    ]
+  }
+}

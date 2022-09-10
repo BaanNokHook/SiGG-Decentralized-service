@@ -26,7 +26,7 @@ export const Terms: React.FunctionComponent<Props> = ({ children }: Props) => {
       <div className="ecl-u-bg-blue">
         <div className="ecl-container ecl-u-pv-m ecl-u-pv-lg-2xl">
           <h1 className="ecl-u-type-heading-1 ecl-u-type-color-white">
-            Welcome to your EBSI wallet
+            Welcome to your SiGG wallet
           </h1>
         </div>
       </div>

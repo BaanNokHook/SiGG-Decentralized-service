@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  diploma:
+    image: 305472350643.dkr.ecr.eu-central-1.amazonaws.com/sigg/diploma:development_siggint-2584-audit-fix_v1.0.0
+    build:
+      context: ../..
+      args:
+        APP_PUBLIC_URL: ${APP_PUBLIC_URL:?Missing APP_PUBLIC_URL variable}
+        SiGG_ENV: ${SiGG_ENV:?Missing SiGG_ENV variable}
+        sigg_DEMONSTRATOR_URL: ${sigg_DEMONSTRATOR_URL:?Missing sigg_DEMONSTRATOR_URL variable}
+        sigg_WALLET_WEB_CLIENT_URL: ${sigg_WALLET_WEB_CLIENT_URL:?Missing sigg_WALLET_WEB_CLIENT_URL variable}

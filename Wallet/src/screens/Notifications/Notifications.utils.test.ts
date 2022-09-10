@@ -39,7 +39,7 @@ describe("getBodyWithNotificationSigned", () => {
 
     jest
       .spyOn(DataStorage, "getDID")
-      .mockImplementationOnce(() => "did:ebsi:0x123");
+      .mockImplementationOnce(() => "did:sigg:0x123");
 
     await expect(
       getBodyWithNotificationSigned(se, "password", notificationToSign)
@@ -54,7 +54,7 @@ describe("getBodyWithNotificationSigned", () => {
 
     jest
       .spyOn(DataStorage, "getDID")
-      .mockImplementationOnce(() => "did:ebsi:0x123");
+      .mockImplementationOnce(() => "did:sigg:0x123");
 
     jest
       .spyOn(SecureEnclave.Instance, "signJwt")
@@ -77,7 +77,7 @@ describe("getBodyWithNotificationSigned", () => {
 
     jest
       .spyOn(DataStorage, "getDID")
-      .mockImplementationOnce(() => "did:ebsi:0x123");
+      .mockImplementationOnce(() => "did:sigg:0x123");
 
     jest
       .spyOn(strB64, "strB64dec")

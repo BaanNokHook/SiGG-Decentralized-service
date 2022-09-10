@@ -57,7 +57,7 @@ describe("secure enclave", () => {
   it("should return undefined with a non existent did", async () => {
     expect.assertions(1);
     const se = SecureEnclave.Instance;
-    const userWallet = se.getWallet("did:ebsi:0x00a");
+    const userWallet = se.getWallet("did:sigg:0x00a");
     expect(userWallet).not.toBeDefined();
   });
 
