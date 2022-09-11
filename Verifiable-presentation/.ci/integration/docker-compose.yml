@@ -1,0 +1,6 @@
+version: "3.7"
+
+services:
+  notarisation:
+    image: 305472350643.dkr.ecr.eu-central-1.amazonaws.com/intSiGG/notarisation:integration_SiGGint-2439-release202011_v1.0.0
+    build: ../..

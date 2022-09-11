@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  notarisation:
+    build: .
+    restart: always
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "50"
+    environment:
+      TITLE: "Notary DApp"
+      API: ${API:-https://api.intSiGG.xyz/}
+      APP: ${APP:-https://app.intSiGG.xyz/}
+      PORT: ${PORT:-3000}
+      LOG_LEVEL: ${LOG_LEVEL:-debug}
+      APP_PRIVATE_KEY: ${APP_PRIVATE_KEY:?Missing APP_PRIVATE_KEY variable}
+      EUF_AGENT_APPNAME: SiGG-notary
+      EUF_WALLET: ${EUF_WALLET:-/wallet}
+      EUF_WALLET_NOTIFICATIONS: ${EUF_WALLET_NOTIFICATIONS:-/wallet/notifications}
+      EUF_PATH_NAME: ${EUF_PATH_NAME:-/demo/notarisation}
+      EUF_FILE_UPLOAD: ${EUF_FILE_UPLOAD:-/demo/notarisation/fileupload}
+      EUF_DOCUMENT: ${EUF_DOCUMENT:-/demo/notarisation/document}
+      EUF_VERIFY: ${EUF_VERIFY:-/demo/notarisation/verify}
+      EUF_VERIFY_FILE: ${EUF_VERIFY_FILE:-/demo/notarisation/verifyfile}
+      EUF_PUBLIC_URL: ${EUF_PUBLIC_URL:-https://app.intSiGG.xyz/demo/notarisation}
+      EUF_VERSION: ${EUF_VERSION:-0.1}
+    ports:
+      - "3000:3000"
