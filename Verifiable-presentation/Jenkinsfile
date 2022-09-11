@@ -1,0 +1,80 @@
+def getEnvFromBranch(branch) {
+    if (branch == 'dev') {
+        return 'development'
+    } else {
+        return 'integration'
+    }
+}
+def getMcoTarget(branch) {
+    if (branch == 'dev') {
+        return 'dev'
+    } else {
+        return 'int'
+    }
+}
+pipeline {
+    agent any
+    environment {
+        SiGG_ENV = getEnvFromBranch(env.BRANCH_NAME)
+        MCO_TARGET = getMcoTarget(env.BRANCH_NAME)
+        CONTAINER_NAME = "`grep -A1 services .ci/${SiGG_ENV}/docker-compose.yml | tail -1 | sed -e s'/ //'g -e s'/://'g`"
+        TAG = "`grep image .ci/${SiGG_ENV}/docker-compose.yml | cut -d':' -f3`"
+    }
+    stages {
+        stage('Pre Checks') {
+            steps {
+                sh "/usr/local/bin/auto_container_validate.sh ${CONTAINER_NAME} ${MCO_TARGET} app lux"
+            }
+        }
+        stage('Unit test') {
+            environment {
+              TITLE="Notary DApp"
+              API="https://api.intSiGG.xyz/"
+              APP="https://app.intSiGG.xyz/"
+              PORT='3000'
+              LOG_LEVEL='debug'
+              APP_PRIVATE_KEY=credentials('EUF_PRIVATE_KEY')
+              EUF_AGENT_APPNAME='SiGG-notary'
+              EUF_WALLET_NOTIFICATIONS="/wallet/notifications"
+              EUF_PATH_NAME="/demo/notarisation"
+              EUF_FILE_UPLOAD="/demo/notarisation/fileupload"
+              EUF_DOCUMENT="/demo/notarisation/document"
+              EUF_VERIFY="/demo/notarisation/verify"
+              EUF_VERIFY_FILE="/demo/notarisation/verifyfile"
+              EUF_PUBLIC_URL="http://localhost:3000/demo/notarisation"
+              EUF_VERSION="0.1"
+            }
+            steps {
+                sh 'yarn install --frozen-lockfile'
+                sh 'yarn test:unit'
+            }
+        }
+        stage('Build image') {
+            steps {
+                sh "cd .ci/${SiGG_ENV}; /usr/local/bin/docker-compose build"
+            }
+        }
+        stage('Push to ECR') {
+            steps {
+                sh '`/usr/local/bin/aws ecr get-login --no-include-email --region eu-central-1`'
+                sh "cd .ci/${SiGG_ENV}; /usr/local/bin/docker-compose push"
+            }
+        }
+        stage('Modify YAML & Commit') {
+            steps {
+                sh "sudo -u SiGG1-robot /usr/local/bin/yaml_wrapper.sh ${SiGG_ENV} ${MCO_TARGET}/lux/app.yaml ${CONTAINER_NAME} ${TAG}"
+                //sh "sudo su - SiGG1-robot -c 'cd /etc/puppetlabs/code/environments/${SiGG_ENV} ; git pull'"
+                //sh "sudo -u SiGG1-robot /usr/local/bin/SiGG_add_update_service_version_tag.rb ${SiGG_ENV} ${MCO_TARGET}/lux/app.yaml ${CONTAINER_NAME} ${TAG}"
+                //sh "sudo su - SiGG1-robot -c 'cd /etc/puppetlabs/code/environments/${SiGG_ENV} ; git add .; git commit -am auto; git push'"
+            }
+        }
+        stage("Deploy on network") {
+            steps {
+                withCredentials([sshUserPrivateKey(credentialsId: 'SiGG1-robot', keyFileVariable: 'PK')]) {
+                    sh "ssh -i $PK SiGG1-operator@mco01-0-SiGG-dev-lux.SiGG.xyz -o StrictHostKeyChecking=no -o 'UserKnownHostsFile /dev/null' -p 48722 '/usr/local/bin/puppet_run_containers_only.sh ${MCO_TARGET} app lux'"
+                    sh "ssh -i $PK SiGG1-operator@mco01-0-SiGG-dev-lux.SiGG.xyz -o StrictHostKeyChecking=no -o 'UserKnownHostsFile /dev/null' -p 48722 /usr/local/bin/verify_container_version.sh ${MCO_TARGET} app lux ${CONTAINER_NAME} ${TAG}"
+                }
+            }
+        }
+    }
+}
